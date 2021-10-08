@@ -9,7 +9,7 @@ import Listing from './screens/Listing/Listing';
 import Details from './screens/Details/Details';
 import AddItem from './screens/AddItem/AddItem';
 import EditItem from './screens/EditItem/EditItem';
-import Nav from './components/Nav/Nav';
+
 
 function App() {
   const [user, setUser] = useState(null)
@@ -24,9 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
-        <Nav />
-      </header>
+
       <Route exact path="/">
         <Landing user={user} />
       </Route>

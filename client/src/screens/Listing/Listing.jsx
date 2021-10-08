@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { getItems } from '../../services/items'
 import Layout from '../../components/Layout/Layout'
+import { Link } from 'react-router-dom'
 
 
 export default function Listing() {
@@ -28,6 +29,7 @@ export default function Listing() {
                 <p>{item?.location}</p>
                 <p>{item?.price}</p>
               </div>
+              <Link to={`/items/${item?._id}`}>Details</Link>
             </div>
           )
         })}
