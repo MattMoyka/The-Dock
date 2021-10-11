@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout/Layout";
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { getItem } from '../../services/items'
+import { getItem } from '../../Services/items'
 
 
 export default function Details() {

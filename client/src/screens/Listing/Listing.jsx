@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { getItems } from '../../services/items'
+import { getItems } from '../../Services/items'
 import Layout from '../../components/Layout/Layout'
 import { Link } from 'react-router-dom'
 

@@ -1,7 +1,7 @@
 import { Route, Redirect } from 'react-router-dom'
 import './App.css';
 import { useState, useEffect } from 'react'
-import { verifyUser } from './services/users'
+import { verifyUser } from './Services/users'
 import Landing from './screens/Landing/Landing'
 import SignUp from './screens/Signin/Signin'
 import Signin from './screens/Signin/Signin';
