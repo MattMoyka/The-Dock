@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom"
+import SignOut from "../../screens/SignOut/SignOut"
 
 
 const authenticatedOptions = (
   <>
     <NavLink to='/new'>Add Item</NavLink>
-    <NavLink to='/items'>Sign Out</NavLink>
+    <NavLink to='/signout'>Sign Out</NavLink>
   </>
 )
 

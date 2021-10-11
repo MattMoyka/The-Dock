@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import { getItem, updateItem } from "../../Services/items"
-import { useParams, Redirect } from 'react-router-dom'
+import { getItem, updateItem, deleteItem } from "../../Services/items"
+import { useParams, Redirect, Link } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 
 
@@ -92,7 +92,9 @@ export default function EditItem(props) {
           <button type='submit' className='edit-button'>
             Edit
           </button>
+          <Link to='/items'><button onClick={() => deleteItem(item?._id)}>Delete</button></Link>
         </form>
+
       </Layout>
     </div>
   )

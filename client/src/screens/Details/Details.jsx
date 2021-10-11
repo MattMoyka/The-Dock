@@ -19,18 +19,18 @@ export default function Details(props) {
   return (
     <div>
       <Layout user={props.user}>
-        <div>
-          <img src={item?.imgURL} alt={item?.title} />
-          <div>
-            <h1>{item?.title}</h1>
-            <h2>{item?.location}</h2>
-            <h2>{item?.description}</h2>
-            <p>{item?.price}</p>
-            <button onClick={() => alert('congrats on the purchase')}>Rent Now</button>
-            <Link to={`/edit/${item._id}`}>Edit</Link>
-          </div>
-        </div>
       </Layout>
+      <div>
+        <img src={item?.imgURL} alt={item?.title} />
+        <div>
+          <h1>{item?.title}</h1>
+          <h2>{item?.location}</h2>
+          <h2>{item?.description}</h2>
+          <p>{item?.price}</p>
+          <button onClick={() => alert('congrats on the purchase')}>Rent Now</button>
+          <Link to={`/edit/${item?._id}`}>Edit</Link>
+        </div>
+      </div>
     </div>
   )
 }
