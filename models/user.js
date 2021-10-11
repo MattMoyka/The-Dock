@@ -8,7 +8,7 @@ const User = new Schema(
       required: true,
     },
     email: { type: String, required: true },
-    phoneNumber: { type: String, required: true },
+    phone: { type: String, required: true },
     password_digest: { type: String, required: true, select: false },
   },
   { timestamps: true }

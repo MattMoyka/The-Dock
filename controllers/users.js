@@ -12,12 +12,12 @@ exp.setDate(today.getDate() + 30);
 
 export const signUp = async (req, res) => {
   try {
-    const { username, email, password } = req.body;
+    const { username, email, phone, password } = req.body;
     const password_digest = await bcrypt.hash(password, SALT_ROUNDS);
     const user = new User({
       username,
       email,
-      phoneNumber,
+      phone,
       password_digest,
     });
 
@@ -76,4 +76,4 @@ export const verify = async (req, res) => {
   }
 };
 
-export const changePassword = async (req, res) => {};
+export const changePassword = async (req, res) => { };
