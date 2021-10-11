@@ -41,10 +41,12 @@ function App() {
         <Details user={user} />
       </Route>
       <Route exact path="/new">
-        {user ? <AddItem user={user} /> : <Redirect to='/signup' />}
+      <AddItem />
+        {/* {user ? <AddItem user={user} /> : <Redirect to='/signup' />} */}
       </Route>
       <Route exact path="/edit/:id">
-        {user ? <EditItem user={user} /> : <Redirect to='/signup' />}
+       <EditItem/>
+       {/* {user ? <EditItem user={user} /> : <Redirect to='/signup' />}  */}
       </Route>
     </div>
   );

@@ -22,7 +22,7 @@ export default function AddItem() {
     setCreated({ created })
   }
   if (isCreated) {
-    return <Redirect to={`/${item.id}`} />
+    return <Redirect to={`/items`} />
   }
 
   return (
