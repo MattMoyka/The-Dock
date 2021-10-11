@@ -3,12 +3,12 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import { verifyUser } from './Services/users'
 import Landing from './screens/Landing/Landing'
-import SignUp from './screens/Signin/Signin'
 import Signin from './screens/Signin/Signin';
 import Listing from './screens/Listing/Listing';
 import Details from './screens/Details/Details';
 import AddItem from './screens/AddItem/AddItem';
 import EditItem from './screens/EditItem/EditItem';
+import SignUp from './screens/SignUp/Signup';
 
 
 function App() {

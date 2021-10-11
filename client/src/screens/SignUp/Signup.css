@@ -1,0 +1,19 @@
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #82A9DD;
+    min-width: 100%;
+    border: 1px solid red;
+}
+/* 
+.form-div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #82A9DD;
+    min-width: 100%;
+    border: 1px solid red;
+} */
