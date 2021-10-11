@@ -1,6 +1,7 @@
 import Nav from "../Nav/Nav"
 
 export default function Layout(props) {
+  console.log(props.user)
   return (
     <div className='layout'>
       <Nav user={props.user} />
