@@ -9,7 +9,7 @@ const insertData = async () => {
   const user1 = new User({
     username: "bruno",
     email: "root@super.gmail.com",
-    phoneNumber: "1234567899",
+    phone: "1234567899",
     password_digest: await bcrypt.hash("!a$ecureP@ssw0Rd55!", 11),
   });
   await user1.save();
@@ -17,7 +17,7 @@ const insertData = async () => {
   const user2 = new User({
     username: "bianca",
     email: "b.anca@super.gmail.com",
-    phoneNumber: "1234567899",
+    phone: "1234567899",
     password_digest: await bcrypt.hash("!$h0pp3R1", 11),
   });
   await user2.save();
@@ -25,7 +25,7 @@ const insertData = async () => {
   const user3 = new User({
     username: "enzo",
     email: "n.zo@super.gmail.com",
-    phoneNumber: "1234567899",
+    phone: "1234567899",
     password_digest: await bcrypt.hash("!$eller4Lif3", 11),
   });
   await user3.save();
@@ -33,7 +33,7 @@ const insertData = async () => {
   const user4 = new User({
     username: "kumi",
     email: "kumi@super.gmail.com",
-    phoneNumber: "1234567899",
+    phone: "1234567899",
     password_digest: await bcrypt.hash("L0v32!p4int", 11),
   });
   await user4.save();
