@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/Layout'
 import { Link } from 'react-router-dom'
 
 
-export default function Listing() {
+export default function Listing(props) {
 
   const [items, setItems] = useState([])
 
@@ -17,7 +17,7 @@ export default function Listing() {
   }, [])
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div>
         {items.map(item => {
           return (

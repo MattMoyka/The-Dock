@@ -9,6 +9,7 @@ import Details from "./screens/Details/Details";
 import AddItem from "./screens/AddItem/AddItem";
 import EditItem from "./screens/EditItem/EditItem";
 import SignUp from "./screens/SignUp/Signup";
+import SignOut from "./screens/SignOut/SignOut";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -43,6 +44,9 @@ function App() {
       </Route>
       <Route exact path="/edit/:id">
         {user ? <EditItem user={user} /> : <Redirect to="/signup" />}
+      </Route>
+      <Route path='/signout'>
+        <SignOut setUser={setUser} />
       </Route>
     </div>
   );
