@@ -5,7 +5,7 @@ export default function Landing(props) {
   return (
     <div>
       <Layout user={props.user}>
-        Landing
+        <Link to='/items'>Start You Journey Now</Link>
       </Layout>
     </div>
   )
