@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Signin.css'
 import { signIn } from '../../Services/users'
 import { useHistory } from 'react-router-dom'
-
+import Layout from '../../components/Layout/Layout'
 
 
 export default function Signin(props) {
@@ -56,29 +56,38 @@ export default function Signin(props) {
   const { email, password } = form
 
   return (
-    <div className='signin-form'>
-      <h3>Sign In</h3>
-      <form onSubmit={onSignIn}>
-        <label>Email</label>
-        <input
-          required
-          type='text'
-          name='email'
-          value={email}
-          placeholder='Enter Email'
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          required
-          name='password'
-          value={password}
-          type='password'
-          placeholder='Password'
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
-    </div>
+    <Layout>
+      <div className="form-div">
+
+        <form onSubmit={onSignIn}>
+          <h3>Sign In</h3>
+          <div className='inputs'>
+            <label>Email</label>
+            <input
+              required
+              className='input'
+              type='text'
+              name='email'
+              value={email}
+              placeholder='Enter Email'
+              onChange={handleChange}
+            />
+          </div>
+          <div className='inputs'>
+            <label>Password</label>
+            <input
+              required
+              className='input'
+              name='password'
+              value={password}
+              type='password'
+              placeholder='Password'
+              onChange={handleChange}
+            />
+          </div>
+          {renderError()}
+        </form>
+      </div>
+    </Layout>
   )
 }
