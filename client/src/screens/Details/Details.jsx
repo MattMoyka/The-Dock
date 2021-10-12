@@ -22,20 +22,20 @@ export default function Details(props) {
       <Layout user={props.user}>
       </Layout>
       <div className="detailsparent-div">
-     <div className="details-image">
+      <div className="details-image">
         <img className="image-detail" src={item?.imgURL} alt={item?.title} />
-        </div>
-<div className="info-div">
+      </div>
+      <div className="info-div">
           <h1 className="h1-details">{item?.title}</h1>
-          <h2 className="fas fa-map-marker-alt">{item?.location}</h2>
+          <h3 className="fas fa-map-marker-alt">{item?.location}</h3>
       
           <p>Item Description </p>
             <p>{item?.description}</p>
           
           {/* <p>${item?.price}</p> */}
           <button className="rent-button" onClick={() => alert('congrats on the purchase')}>${item?.price}-Rent Now</button>
-          <Link  className="far fa-edit" to={`/edit/${item?._id}`}>Edit Item</Link>
-          </div> 
+          <Link  className="far fa-edit" to={`/edit/${item?._id}`}>Edit </Link>
+      </div> 
       </div>
       </div>
    
