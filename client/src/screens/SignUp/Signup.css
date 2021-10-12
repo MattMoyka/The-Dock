@@ -1,19 +1,32 @@
-.form-div form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #82A9DD;
-    min-width: 100%;
-    border: 1px solid red;
+.form-div{
+  display: flex;
+  flex-flow: column nowrap;
+margin: 0 auto;
 }
-/* 
-.form-div form {
+
+h3{
+
+  margin: 0 0 30px 0;
+
+}
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #82A9DD;
-    min-width: 100%;
-    border: 1px solid red;
-} */
+    width: 50vw;
+    box-shadow: 0px 0px 5px black;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.input{
+  width: 40vw;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+}

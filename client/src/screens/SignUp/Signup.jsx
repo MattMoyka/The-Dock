@@ -61,12 +61,14 @@ export default function SignUp(props) {
   return (
     <Layout>
       <div className="form-div">
-        <h3>Sign Up</h3>
+
 
         <form onSubmit={onSignUp}>
+          <h3>Create Account</h3>
           <label>Username</label>
           <input
             required
+            className='input'
             type="text"
             name="username"
             value={username}
@@ -76,6 +78,7 @@ export default function SignUp(props) {
           <label>Email address</label>
           <input
             required
+            className='input'
             type="text"
             name="email"
             value={email}
@@ -85,6 +88,7 @@ export default function SignUp(props) {
           <label>Phone Number</label>
           <input
             required
+            className='input'
             name="phone"
             value={phone}
             type="text"
@@ -94,6 +98,7 @@ export default function SignUp(props) {
           <label>Password</label>
           <input
             required
+            className='input'
             name="password"
             value={password}
             type="password"
