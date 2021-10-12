@@ -23,7 +23,7 @@ export default function Details(props) {
       </Layout>
       <div className="detailsparent-div">
       <div className="details-image">
-        <img className="image-detail" src={item?.imgURL} alt={item?.title} />
+          <img className="image-detail" src={item?.imgURL} alt={item?.title} />
       </div>
       <div className="info-div">
           <h1 className="h1-details">{item?.title}</h1>
