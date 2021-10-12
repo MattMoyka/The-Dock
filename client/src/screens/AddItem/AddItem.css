@@ -8,7 +8,8 @@
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
-  height: 690px;
+  height: auto;
+
   width: 1044px;
   margin: 21px 0;
 }
