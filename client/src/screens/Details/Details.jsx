@@ -27,13 +27,12 @@ export default function Details(props) {
       </div>
       <div className="info-div">
           <h1 className="h1-details">{item?.title}</h1>
-          <h3 className="fas fa-map-marker-alt">{item?.location}</h3>
-      
+          <h3 id="location-detail" className="fas fa-map-marker-alt">{item?.location}</h3>
+          <button className="rent-button" onClick={() => alert('congrats on the purchase')}>${item?.price}/HR-Rent Now</button>
+          <div className="description-div">
           <p>Item Description </p>
-            <p>{item?.description}</p>
-          
-          {/* <p>${item?.price}</p> */}
-          <button className="rent-button" onClick={() => alert('congrats on the purchase')}>${item?.price}-Rent Now</button>
+          <p>{item?.description}</p>
+            </div>
           <Link  className="far fa-edit" to={`/edit/${item?._id}`}>Edit </Link>
       </div> 
       </div>
