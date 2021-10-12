@@ -26,14 +26,14 @@ export default function Listing(props) {
             <div key={item?.title} className="itemCards">
               <Link to={`/items/${item?._id}`} style={{ textDecoration: 'none', color:'black' }}>
               <div className="item-title">
-              <h1>{item?.title}</h1>
               </div>
               <img src={item?.imgURL} alt={item?.title} />
               <div className="img-desc">
-              <p>"{item?.description}"</p>
+              <h2>{item?.title}</h2>
+              {/* <p>"{item?.description}"</p> */}
               <div id="loc-details">
-                <p id="hoverShow1" className="fas fa-map-marker-alt"> {item?.location}</p>
-                <p id="hoverShow1"> $ {item?.price}</p>
+                <h3 id="hoverShow1" className="fas fa-map-marker-alt"> {item?.location} | $ {item?.price}</h3>
+                {/* <p id="hoverShow1"> $ {item?.price}</p> */}
               </div>
               </div>
               </Link>
