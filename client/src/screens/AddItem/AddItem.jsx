@@ -36,56 +36,75 @@ export default function AddItem(props) {
       <Layout user={props.user}>
         <div className="addItem">
           <form className="create-form" onSubmit={handleSubmit}>
-            <input
-              className="input-name"
-              placeholder="Title"
-              value={item.title}
-              name="title"
-              required
-              autoFocus
-              onChange={handleChange}
-            />
-
-            <input
-              className="input-category"
-              placeholder="Category"
-              value={item.category}
-              name="category"
-              required
-              onChange={handleChange}
-            />
-            <input
-              className="input-price"
-              placeholder="Price"
-              value={item.price}
-              name="price"
-              required
-              onChange={handleChange}
-            />
-            <input
-              className="input-location"
-              placeholder="Location"
-              value={item.location}
-              name="location"
-              required
-              onChange={handleChange}
-            />
-            <input
-              className="input-imgURL"
-              placeholder="Image URL"
-              value={item.imgURL}
-              name="imgURL"
-              required
-              onChange={handleChange}
-            />
-            <textarea
-              className="input-description"
-              placeholder="Description"
-              value={item.description}
-              name="description"
-              required
-              onChange={handleChange}
-            />
+            <div className="top-line">
+              <div>
+                <h4>Title</h4>
+                <input
+                  className="input-title"
+                  placeholder="Title"
+                  value={item.title}
+                  name="title"
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <h4>Category</h4>
+                <input
+                  className="input-category"
+                  placeholder="Category"
+                  value={item.category}
+                  name="category"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <h4>Price</h4>
+                <input
+                  className="input-price"
+                  placeholder="Price"
+                  value={item.price}
+                  name="price"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <h4>Location</h4>
+                <input
+                  className="input-location"
+                  placeholder="Location"
+                  value={item.location}
+                  name="location"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+            </div>
+            <div className="secondLine">
+              <h4>Image URL</h4>
+              <input
+                className="input-imgURL"
+                placeholder="Image URL"
+                value={item.imgURL}
+                name="imgURL"
+                required
+                onChange={handleChange}
+              />
+            </div>
+            <div className="thirdLine">
+              <h4>Description</h4>
+              <textarea
+                className="input-description"
+                placeholder="Description"
+                value={item.description}
+                name="description"
+                required
+                onChange={handleChange}
+              />
+            </div>
             <button type="submit" className="submit-button">
               Submit
             </button>
