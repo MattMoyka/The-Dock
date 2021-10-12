@@ -1,0 +1,51 @@
+.listings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px; 
+    align-items: center;
+
+}
+
+.itemCards {
+    border: solid;
+    border-width: thin;
+    height: auto;
+    box-shadow: 2px 3px;
+    padding: 1%;
+    background-color: #82A9DD;
+}
+
+.item-title {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+}
+
+.itemCards img {
+    height: 250px;
+    box-shadow: 2px 3px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-desc {
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+}
+
+.itemCards:hover #hoverShow1 {
+    display: flex;
+    transition: bottom 0.5s ease;
+}
+
+.itemCards #hoverShow1 {
+    display: none;
+}
+
+.hidden-location{
+    background-color: white;
+    border-radius: 30px;
+    display: inline;
+}
