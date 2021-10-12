@@ -5,7 +5,7 @@
   padding: 10%;
 }
 .h1-details{
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .details-image{
@@ -13,10 +13,11 @@
   height: 550px;
 } 
 
+
 .far{
   color: black;
+  text-decoration: none;
 }
-
 
  .image-detail{
   width: 100%;
@@ -25,10 +26,13 @@
 
 .info-div{
   display: flex;
-width: 50%;
+  width: 50%;
   flex-direction: column;
-   margin: 70px; 
+   margin: 70px;  
+   
 }
+
+
 
 .rent-button{
   color: white;
@@ -36,12 +40,18 @@ width: 50%;
   padding: .9375rem 0;
   margin: 1.25rem 0 1.5rem;
   border: 1px solid transparent;
+  border-radius: 10px;
+  letter-spacing: .5px;
+}
+
+.description-div{
+  margin-bottom: 20px;
 }
 
 
 
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width:600px) {
   
   .details-image{
     width: 300px;
@@ -49,20 +59,22 @@ width: 50%;
     display: flex;
     justify-content: center;
     margin: 20px;
-    
-  
   }
+  
 
   .detailsparent-div{
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding: 10%;
+    align-items: center;
+
   }
   .info-div{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    /* align-content: center; */
     
   }
 }
