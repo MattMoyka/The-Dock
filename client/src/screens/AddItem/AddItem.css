@@ -9,9 +9,14 @@
   display: flex;
   justify-content: space-around;
   height: auto;
-
-  width: 1044px;
+  width: auto;
   margin: 21px 0;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .input-title,
@@ -23,12 +28,6 @@
   border-radius: 10px;
   border-style: none;
   box-shadow: 0px 0px 5px black;
-}
-
-.top-line {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .secondLine {
@@ -43,12 +42,13 @@
 .input-category,
 .input-price,
 .input-location {
-  height: 66px;
-  width: 216px;
+  width: 10vw;
+  height: 35px;
+  margin: 0 1vw;
 }
 
 .input-imgURL {
-  height: 66px;
+  height: 35px;
   width: 99%;
 }
 

@@ -3,65 +3,62 @@
   justify-content: center;
 }
 
-.create-form {
+.create-form-edit {
   background-color: #82a9dd;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
   height: auto;
-  width: 1044px;
+  width: auto;
   margin: 21px 0;
 }
 
-.input-title,
-.input-category,
-.input-price,
-.input-location,
-.input-imgURL,
-.input-description {
-  border-radius: 10px;
-  border-style: none;
-  box-shadow: 0px 0px 5px black;
-}
-
-.top-line {
+.top-line-edit {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.secondLine {
+.input-title-edit,
+.input-category-edit,
+.input-price-edit,
+.input-location-edit,
+.input-imgURL-edit,
+.input-description-edit {
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 0px 5px black;
+}
+
+.secondLine-edit {
   width: 100%;
 }
 
-.thirdLine {
+.thirdLine-edit {
   width: 100%;
 }
 
-.input-title,
-.input-category,
-.input-price,
-.input-location {
-  height: 66px;
-  width: 216px;
+.input-title-edit,
+.input-category-edit,
+.input-price-edit,
+.input-location-edit {
+  width: 10vw;
+  height: 35px;
+  margin: 0 1vw;
 }
 
-.input-imgURL {
-  height: 66px;
+.input-imgURL-edit {
+  height: 35px;
   width: 99%;
 }
 
-.input-description {
+.input-description-edit {
   height: 182px;
   width: 99%;
 }
 
-.buttons {
-  /* display: flex; */
-}
-
-.submit-button,
-.delete-button {
+.submit-button-edit,
+.delete-button-edit {
   background-color: #dea01e;
   border-style: none;
   border-radius: 10px;
@@ -70,18 +67,18 @@
   box-shadow: 0px 0px 5px black;
   margin: 1%;
 }
-.submit-button:hover,
-.delete-button:hover {
+.submit-button-edit:hover,
+.delete-button-edit:hover {
   border-style: solid;
   font-size: 20px;
 }
 
-.delete-button {
+.delete-button-edit {
   background-color: red;
 }
 
 @media only screen and (max-width: 600px) {
-  .top-line {
+  .top-line-edit {
     flex-wrap: wrap;
   }
 }
