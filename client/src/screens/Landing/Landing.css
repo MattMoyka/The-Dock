@@ -11,16 +11,26 @@
   
   position: absolute;
   bottom: 50px;
-  background: #DEA01E;
-  width: 500px;
-  height: 50px;
+  background-color: #dea01e;
+  height: 48px;
+  width: 400px;
   border-radius: 10px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
+  box-shadow: 0px 0px 5px black;
 } 
+
+.call:hover {
+  border-style: solid;
+  font-size: 20px;
+}
+
+
+
+
 
 .text-call{
   text-decoration: none;
