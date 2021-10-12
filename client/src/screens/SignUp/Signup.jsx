@@ -65,46 +65,55 @@ export default function SignUp(props) {
 
         <form onSubmit={onSignUp}>
           <h3>Create Account</h3>
-          <label>Username</label>
-          <input
-            required
-            className='input'
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Username"
-            onChange={handleChange}
-          />
-          <label>Email address</label>
-          <input
-            required
-            className='input'
-            type="text"
-            name="email"
-            value={email}
-            placeholder="Email"
-            onChange={handleChange}
-          />
-          <label>Phone Number</label>
-          <input
-            required
-            className='input'
-            name="phone"
-            value={phone}
-            type="text"
-            placeholder="Phone"
-            onChange={handleChange}
-          />
-          <label>Password</label>
-          <input
-            required
-            className='input'
-            name="password"
-            value={password}
-            type="password"
-            placeholder="password"
-            onChange={handleChange}
-          />
+
+          <div className='inputs'>
+            <label>Username</label>
+            <input
+              required
+              className='input'
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Username"
+              onChange={handleChange}
+            />
+          </div >
+          <div className='inputs'>
+            <label>Email address</label>
+            <input
+              required
+              className='input'
+              type="text"
+              name="email"
+              value={email}
+              placeholder="Email"
+              onChange={handleChange}
+            />
+          </div>
+          <div className='inputs'>
+            <label>Phone Number</label>
+            <input
+              required
+              className='input'
+              name="phone"
+              value={phone}
+              type="text"
+              placeholder="Phone"
+              onChange={handleChange}
+            />
+          </div>
+          <div className='inputs'>
+            <label>Password</label>
+            <input
+              required
+              className='input'
+              name="password"
+              value={password}
+              type="password"
+              placeholder="password"
+              onChange={handleChange}
+            />
+          </div>
           {renderError()}
         </form>
       </div>
