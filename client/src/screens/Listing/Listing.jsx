@@ -19,22 +19,24 @@ export default function Listing(props) {
 
   return (
     <Layout user={props.user}>
+      <h1>Items</h1>
       <div className="listings">
         {items.map(item => {
           return (
             <div key={item?.title} className="itemCards">
+              <Link to={`/items/${item?._id}`} style={{ textDecoration: 'none', color:'black' }}>
               <div className="item-title">
               <h1>{item?.title}</h1>
               </div>
               <img src={item?.imgURL} alt={item?.title} />
               <div className="img-desc">
-              <h2>{item?.description}</h2>
-              </div>
-              <div className="hidden-location">
-                <p id="hoverShow1">Zip-Code: {item?.location}</p>
+              <p>"{item?.description}"</p>
+              <div id="loc-details">
+                <p id="hoverShow1" className="fas fa-map-marker-alt"> {item?.location}</p>
                 <p id="hoverShow1"> $ {item?.price}</p>
               </div>
-              <Link to={`/items/${item?._id}`}>Details</Link>
+              </div>
+              </Link>
             </div>
           )
         })}

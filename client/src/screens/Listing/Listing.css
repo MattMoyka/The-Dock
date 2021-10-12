@@ -14,6 +14,9 @@
     box-shadow: 2px 3px;
     padding: 1%;
     background-color: #82A9DD;
+    border-radius: 30px;
+    text-decoration: none;
+    
 }
 
 .item-title {
@@ -23,10 +26,11 @@
 }
 
 .itemCards img {
-    height: 250px;
+    height: 200px;
     box-shadow: 2px 3px;
     width: 100%;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .img-desc {
@@ -35,14 +39,18 @@
     height: auto;
 }
 
-.itemCards:hover #hoverShow1 {
-    display: flex;
-    transition: bottom 0.5s ease;
+#loc-details {
+    height: 0px;
+    visibility: hidden;
+    transition-duration: 150ms;
 }
 
-.itemCards #hoverShow1 {
-    display: none;
-}
+
+.img-desc:hover #loc-details {
+    height: 90px;
+    /* transition-delay: 300ms; */
+    visibility: visible;
+}    
 
 .hidden-location{
     background-color: white;
