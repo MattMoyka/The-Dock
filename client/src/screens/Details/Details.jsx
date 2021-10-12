@@ -32,8 +32,8 @@ export default function Details(props) {
           <div className="description-div">
           <p>Item Description </p>
           <p>{item?.description}</p>
-            </div>
-          <Link  className="far fa-edit" to={`/edit/${item?._id}`}>Edit </Link>
+      </div>
+          <Link  className="far fa-edit fa-2x" to={`/edit/${item?._id}`}></Link>
       </div> 
       </div>
       </div>
