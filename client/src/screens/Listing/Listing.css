@@ -1,22 +1,23 @@
 .listings {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 40px; 
     align-items: center;
-
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .itemCards {
     border: solid;
     border-width: thin;
-    height: auto;
-    box-shadow: 2px 3px;
-    padding: 1%;
+    height: fit-content;
+    box-shadow: 2px 3px 5px;
+    padding: 10px;
     background-color: #82A9DD;
     border-radius: 30px;
     text-decoration: none;
-    
+    width: 30%;
 }
 
 .item-title {
@@ -26,17 +27,20 @@
 }
 
 .itemCards img {
-    height: 200px;
-    box-shadow: 2px 3px;
-    width: 100%;
+    padding-top: 2%;
+    height: 28vh;
+    width: 28vw;
     border-radius: 20px;
     text-decoration: none;
+    padding-bottom: 1%;
 }
 
 .img-desc {
+    padding-top: 2%;
     background-color: white;
     border-radius: 10px;
-    height: auto;
+    height: fit-content;
+    width: contain;
 }
 
 #loc-details {
@@ -47,8 +51,8 @@
 
 
 .img-desc:hover #loc-details {
-    height: 90px;
-    /* transition-delay: 300ms; */
+    height: 65px;
+    /* transition-delay: 250ms; */
     visibility: visible;
 }    
 
