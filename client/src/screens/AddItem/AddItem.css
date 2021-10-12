@@ -1,0 +1,50 @@
+.addItem {
+  display: flex;
+  justify-content: center;
+}
+
+.create-form {
+  background-color: #82a9dd;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 690px;
+  width: 1044px;
+  margin: 21px 0;
+}
+
+.input-name,
+.input-category,
+.input-price,
+.input-location,
+.input-imgURL,
+.input-description {
+  border-radius: 10px;
+}
+
+.input-name,
+.input-category,
+.input-price,
+.input-location {
+  height: 66px;
+  width: 216px;
+  display: flex;
+  margin: 66px 0 21px 0;
+}
+
+.input-imgURL {
+  height: 66px;
+  width: 1002px;
+  margin: 50px 0 21px 0;
+}
+
+.img-description {
+  height: 182px;
+  width: 1002px;
+}
+
+.submit-button {
+  background-color: #dea01e;
+  border-radius: 10px;
+}
