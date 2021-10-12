@@ -37,42 +37,54 @@ export default function AddItem(props) {
         <div className="addItem">
           <form className="create-form" onSubmit={handleSubmit}>
             <div className="top-line">
-              <input
-                className="input-title"
-                placeholder="Title"
-                value={item.title}
-                name="title"
-                required
-                autoFocus
-                onChange={handleChange}
-              />
-
-              <input
-                className="input-category"
-                placeholder="Category"
-                value={item.category}
-                name="category"
-                required
-                onChange={handleChange}
-              />
-              <input
-                className="input-price"
-                placeholder="Price"
-                value={item.price}
-                name="price"
-                required
-                onChange={handleChange}
-              />
-              <input
-                className="input-location"
-                placeholder="Location"
-                value={item.location}
-                name="location"
-                required
-                onChange={handleChange}
-              />
+              <div>
+                <h4>Title</h4>
+                <input
+                  className="input-title"
+                  placeholder="Title"
+                  value={item.title}
+                  name="title"
+                  required
+                  autoFocus
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <h4>Category</h4>
+                <input
+                  className="input-category"
+                  placeholder="Category"
+                  value={item.category}
+                  name="category"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <h4>Price</h4>
+                <input
+                  className="input-price"
+                  placeholder="Price"
+                  value={item.price}
+                  name="price"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <h4>Location</h4>
+                <input
+                  className="input-location"
+                  placeholder="Location"
+                  value={item.location}
+                  name="location"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
             </div>
             <div className="secondLine">
+              <h4>Image URL</h4>
               <input
                 className="input-imgURL"
                 placeholder="Image URL"
@@ -83,6 +95,7 @@ export default function AddItem(props) {
               />
             </div>
             <div className="thirdLine">
+              <h4>Description</h4>
               <textarea
                 className="input-description"
                 placeholder="Description"
