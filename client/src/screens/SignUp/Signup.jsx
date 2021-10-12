@@ -52,7 +52,7 @@ export default function SignUp(props) {
         </button>
       );
     } else {
-      return <button type="submit">Sign Up</button>;
+      return <button type="submit" className='submit-button'>Sign Up</button>;
     }
   };
 

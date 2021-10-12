@@ -49,7 +49,7 @@ export default function Signin(props) {
         </button>
       )
     } else {
-      return <button type='submit'>Sign In</button>
+      return <button type='submit' className='submit-button'>Sign In</button>
     }
   }
 

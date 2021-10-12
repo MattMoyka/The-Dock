@@ -45,14 +45,15 @@ label{
   padding: 0 10px;
 }
 
-button{
-margin: 16px;
-width: 170px;
-height: 40px;
-left: 651px;
-top: 774px;
-background: #DEA01E;
-border-radius: 10px;
-border: none;
+.submit-button {
+  background-color: #dea01e;
+  border-style: none;
+  border-radius: 10px;
+  height: 48px;
+  width: 342px;
+  box-shadow: 0px 0px 5px black;
 }
-
+.submit-button:hover {
+  border-style: solid;
+  font-size: 20px;
+}
