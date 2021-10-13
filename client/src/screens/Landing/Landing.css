@@ -1,54 +1,83 @@
-.landing{
-  background: url('https://images.unsplash.com/photo-1599229526921-4f29d42b0b41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=715&q=80.png') no-repeat center center fixed;
-  background-size: cover;
-  height: 90vh;
-  position: relative;
-  display:flex;
-  justify-content: center;
+.main-container {
+  background-color: #fffaf1;
 }
 
-.call{
-  
-  position: absolute;
-  bottom: 50px;
+.landing {
+  background-color: #fffaf1;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.left-landing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 75vh;
+  width: 75vw;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.call {
+  /* position: absolute; */
+  /* bottom: 50px; */
   background-color: #dea01e;
   height: 48px;
   width: 400px;
   border-radius: 10px;
-  margin: auto;
+  margin: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
   box-shadow: 0px 0px 5px black;
-} 
+}
 
 .call:hover {
   border-style: solid;
   font-size: 20px;
 }
 
-
-
-
-
-.text-call{
+.text-call {
   text-decoration: none;
   color: black;
   font-size: 35px;
 }
 
-
 .glass {
-
-  position: absolute;
-  top: 5vh;
-  left: 5vw;
-  background-color:rgba(125, 125, 125, 0.606);
-  padding: 10px;
+  /* position: absolute; */
+  /* top: 5vh; */
+  /* left: 5vw; */
+  /* background-color: rgba(125, 125, 125, 0.606); */
+  /* padding: 10px; */
   border-radius: 10px;
-  color: white;
+  /* color: white; */
   font-size: 40px;
   font-weight: bold;
 }
 
+.landing-img {
+  display: flex;
+  height: 75vh;
+  width: 75vw;
+  margin-top: 5%;
+  margin-right: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-img {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .landing {
+    margin-top: -10%;
+  }
+
+  .left-landing {
+    margin-top: -10%;
+  }
+}
