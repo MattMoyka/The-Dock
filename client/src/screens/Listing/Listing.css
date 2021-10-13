@@ -87,5 +87,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-
+  .itemCards {
+      width: 40vw;
+  }
+  .itemCards .listing-img {
+    width: 40vw;
+     }
 }
