@@ -50,6 +50,7 @@ label {
   height: 48px;
   width: 342px;
   box-shadow: 0px 0px 5px black;
+  margin-top: 20px;
 }
 .submit-button-sign-up:hover {
   border-style: solid;
