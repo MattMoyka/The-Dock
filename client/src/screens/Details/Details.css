@@ -31,23 +31,17 @@
 .description-tag{
   font-weight: bold;
 }
-.button.rent-button{
-  margin-top: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px black;
-  letter-spacing: .5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .rent-button{
-
+  margin-top: 30px;
+  padding: 20px;
   background-color: #dea01e;
   border-style: none;
   border-radius: 10px;
   box-shadow: 0px 0px 5px black;
   color: white;
+  
 }
 
 .description-div{
