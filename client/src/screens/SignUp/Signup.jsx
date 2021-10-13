@@ -52,7 +52,11 @@ export default function SignUp(props) {
         </button>
       );
     } else {
-      return <button type="submit">Sign Up</button>;
+      return (
+        <button type="submit" className="submit-button-sign-up">
+          Sign Up
+        </button>
+      );
     }
   };
 
@@ -61,28 +65,26 @@ export default function SignUp(props) {
   return (
     <Layout>
       <div className="form-div">
-
-
-        <form onSubmit={onSignUp}>
+        <form className="form-sign-up" onSubmit={onSignUp}>
           <h3>Create Account</h3>
 
-          <div className='inputs'>
+          <div className="inputs">
             <label>Username</label>
             <input
               required
-              className='input'
+              className="input"
               type="text"
               name="username"
               value={username}
               placeholder="Username"
               onChange={handleChange}
             />
-          </div >
-          <div className='inputs'>
+          </div>
+          <div className="inputs">
             <label>Email address</label>
             <input
               required
-              className='input'
+              className="input"
               type="text"
               name="email"
               value={email}
@@ -90,11 +92,11 @@ export default function SignUp(props) {
               onChange={handleChange}
             />
           </div>
-          <div className='inputs'>
+          <div className="inputs">
             <label>Phone Number</label>
             <input
               required
-              className='input'
+              className="input"
               name="phone"
               value={phone}
               type="text"
@@ -102,11 +104,11 @@ export default function SignUp(props) {
               onChange={handleChange}
             />
           </div>
-          <div className='inputs'>
+          <div className="inputs">
             <label>Password</label>
             <input
               required
-              className='input'
+              className="input"
               name="password"
               value={password}
               type="password"

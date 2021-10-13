@@ -60,6 +60,7 @@ export default function AddItem(props) {
                   onChange={handleChange}
                 />
               </div>
+              <div className="break"></div>
               <div>
                 <h4>Price</h4>
                 <input
