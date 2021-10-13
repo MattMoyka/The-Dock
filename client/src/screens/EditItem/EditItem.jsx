@@ -44,12 +44,12 @@ export default function EditItem(props) {
     <div>
       <Layout user={props.user}>
         <div className="editItem">
-          <form className="create-form" onSubmit={handleSubmit}>
-            <div className="top-line">
+          <form className="create-form-edit" onSubmit={handleSubmit}>
+            <div className="top-line-edit">
               <div>
                 <h4>Title</h4>
                 <input
-                  className="input-title"
+                  className="input-title-edit"
                   placeholder="Title"
                   value={item.title}
                   name="title"
@@ -61,7 +61,7 @@ export default function EditItem(props) {
               <div>
                 <h4>Category</h4>
                 <input
-                  className="input-category"
+                  className="input-category-edit"
                   placeholder="Category"
                   value={item.category}
                   name="category"
@@ -69,10 +69,11 @@ export default function EditItem(props) {
                   onChange={handleChange}
                 />
               </div>
+              <div className="break"></div>
               <div>
                 <h4>Price</h4>
                 <input
-                  className="input-price"
+                  className="input-price-edit"
                   placeholder="Price"
                   value={item.price}
                   name="price"
@@ -83,7 +84,7 @@ export default function EditItem(props) {
               <div>
                 <h4>Location</h4>
                 <input
-                  className="input-location"
+                  className="input-location-edit"
                   placeholder="Location"
                   value={item.location}
                   name="location"
@@ -92,10 +93,10 @@ export default function EditItem(props) {
                 />
               </div>
             </div>
-            <div className="secondLine">
+            <div className="secondLine-edit">
               <h4>Image URL</h4>
               <input
-                className="input-imgURL"
+                className="input-imgURL-edit"
                 placeholder="Image URL"
                 value={item.imgURL}
                 name="imgURL"
@@ -103,10 +104,10 @@ export default function EditItem(props) {
                 onChange={handleChange}
               />
             </div>
-            <div className="thirdLine">
+            <div className="thirdLine-edit">
               <h4>Description</h4>
               <textarea
-                className="input-description"
+                className="input-description-edit"
                 placeholder="Description"
                 value={item.description}
                 name="description"
@@ -114,14 +115,14 @@ export default function EditItem(props) {
                 onChange={handleChange}
               />
             </div>
-            <div className="buttons">
-              <button type="submit" className="submit-button">
+            <div className="buttons-edit">
+              <button type="submit" className="submit-button-edit">
                 Edit Item
               </button>
               <Link to="/items">
                 <button
-                  className="submit-button"
-                  className="delete-button"
+                  className="submit-button-edit"
+                  className="delete-button-edit"
                   onClick={() => deleteItem(item?._id)}
                 >
                   Delete Item
