@@ -86,4 +86,10 @@
   .listings {
     grid-template-columns: 1fr 1fr;
   }
+  .itemCards {
+      width: 40vw;
+  }
+  .itemCards .listing-img {
+    width: 40vw;
+     }
 }
