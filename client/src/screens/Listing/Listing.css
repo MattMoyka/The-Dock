@@ -1,11 +1,17 @@
-.listings {
+/* .listings {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 40px; 
+    justify-content: space-evenly;
     align-items: center;
-    gap: 5px;
+    gap: 30px;
     flex-wrap: wrap;
+} */
+
+.listings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
 }
 
 .itemCards {
@@ -17,7 +23,7 @@
     background-color: #82A9DD;
     border-radius: 30px;
     text-decoration: none;
-    width: 30%;
+    width: 25vw;
 }
 
 .item-title {
@@ -26,10 +32,10 @@
     height: auto;
 }
 
-.itemCards img {
+.itemCards .listing-img {
     padding-top: 2%;
     height: 28vh;
-    width: 28vw;
+    width: 22vw;
     border-radius: 20px;
     text-decoration: none;
     padding-bottom: 1%;
@@ -38,10 +44,19 @@
 .img-desc {
     padding-top: 2%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     height: fit-content;
     width: contain;
+    word-wrap: break-word;
+
 }
+
+.title-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 #loc-details {
     height: 0px;
@@ -50,14 +65,25 @@
 }
 
 
-.img-desc:hover #loc-details {
+.img-desc:hover #loc-details{
     height: 65px;
     /* transition-delay: 250ms; */
     visibility: visible;
+    white-space: normal;
 }    
+
+.img-desc:hover .title-text{
+  white-space: normal;
+} 
 
 .hidden-location{
     background-color: white;
     border-radius: 30px;
     display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  .listings {
+    grid-template-columns: 1fr 1fr;
+  }
 }
