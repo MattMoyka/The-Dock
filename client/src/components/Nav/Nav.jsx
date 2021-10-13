@@ -1,20 +1,28 @@
-import { NavLink } from "react-router-dom"
-import SignOut from "../../screens/SignOut/SignOut"
-import './Nav.css'
+import { NavLink } from "react-router-dom";
+import SignOut from "../../screens/SignOut/SignOut";
+import "./Nav.css";
 
 const authenticatedOptions = (
   <>
-    <NavLink className="link" to='/new'>Add Item</NavLink>
-    <NavLink className="link" to='/signout'>Sign Out</NavLink>
+    <NavLink className="link" to="/new">
+      Add Item
+    </NavLink>
+    <NavLink className="link" to="/signout">
+      Sign Out
+    </NavLink>
   </>
-)
+);
 
 const unauthenticatedOptions = (
   <>
-    <NavLink className="link" to="/signup">Sign Up</NavLink>
-    <NavLink className="link" to="/signin">Log In</NavLink>
+    <NavLink className="link" to="/signup">
+      Sign Up
+    </NavLink>
+    <NavLink className="link" to="/signin">
+      Log In
+    </NavLink>
   </>
-)
+);
 
 // const alwaysOptions = (
 //   <>
@@ -23,19 +31,20 @@ const unauthenticatedOptions = (
 // )
 
 export default function Nav(props) {
-  const { user } = props
-  console.log(user)
+  const { user } = props;
+  console.log(user);
   return (
     <nav className="nav">
-      <div>
-        <NavLink className='logo' to='/items'>The Docks</NavLink>
+      <div className="logo">
+        <NavLink className="logo-link" to="/items">
+          The Docks
+        </NavLink>
       </div>
-      <div className='nav-links'>
-        {user && <div className="link">Welcome, {user.username}</div>}
+      <div className="nav-links">
+        {user && <div className="link">Welcome, {user.username}!</div>}
         {/* {alwaysOptions} */}
         {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
-
     </nav>
-  )
+  );
 }
