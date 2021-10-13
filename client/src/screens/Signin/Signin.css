@@ -1,6 +1,59 @@
-.signin-form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.form-div {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+}
+
+h3 {
+  margin: 0 0 30px 0;
+  font-weight: normal;
+}
+
+.form-sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #82a9dd;
+  width: 50vw;
+  max-width: 500px;
+  box-shadow: 0px 0px 5px black;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+}
+
+label {
+  text-align: left;
+  padding: 10px;
+}
+
+.input {
+  width: 40vw;
+  max-width: 400px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+}
+
+.submit-button-sign-in {
+  background-color: #dea01e;
+  border-style: none;
+  border-radius: 10px;
+  height: 48px;
+  width: 20vw;
+  box-shadow: 0px 0px 5px black;
+  margin-top: 20px;
+}
+.submit-button-sign-in:hover {
+  border-style: solid;
+  font-size: 20px;
 }
