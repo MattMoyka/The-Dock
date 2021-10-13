@@ -85,6 +85,7 @@
 @media only screen and (max-width: 600px) {
   .listings {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
   .itemCards {
       width: 40vw;
