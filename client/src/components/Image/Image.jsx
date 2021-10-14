@@ -1,9 +1,10 @@
 import { useState } from 'react'
+import './Image.css'
 
 export default function Image(props) {
   const [loading, setLoading] = useState(false)
   const [image, setImage] = useState('')
-  const { item, setItem } = props;
+  const { item, setItem, prevImg } = props;
 
 
   const uploadImage = async e => {
@@ -30,16 +31,16 @@ export default function Image(props) {
     setLoading(false)
 
   }
-
+  console.log(prevImg)
   return (
-    <div>
-      <h3>Upload Image ...</h3>
-      <input type='file' name='file' placeholder="Upload an image"
+    <div className='image-upload'>
+      <h4>Upload Image</h4>
+      <input className='input-image' type='file' name='file' placeholder="Upload an image"
         onChange={uploadImage} value={item.imgUrl} name="imgURL" required />
-
-      {
-        loading ? (<h3>Loading...</h3>) : <img src={image} style={{ width: '300px' }} />
-      }
+      <div className='image-section'>
+        {loading ? <h3>Loading.......</h3> : null}
+        {prevImg === undefined ? <img className='image-act' src={image} /> : <img className='image-act' src={prevImg} />}
+      </div>
     </div>
   )
 }
