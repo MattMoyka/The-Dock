@@ -26,6 +26,7 @@ export default function Landing(props) {
               src="https://images.unsplash.com/photo-1599229526921-4f29d42b0b41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=715&q=80.png"
               height="540px"
               width="360px"
+              alt="Dock Sunset"
             />
           </div>
         </div>
