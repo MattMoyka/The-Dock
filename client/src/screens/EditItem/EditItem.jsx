@@ -40,7 +40,7 @@ export default function EditItem(props) {
   if (isUpdated) {
     return <Redirect to={`/items/${id}`} />;
   }
-
+console.log(item)
   return (
     <div>
       <Layout user={props.user}>
@@ -60,15 +60,19 @@ export default function EditItem(props) {
                 />
               </div>
               <div>
-                <h4>Category</h4>
-                <input
-                  className="input-category-edit"
-                  placeholder="Category"
-                  value={item.category}
+              <h4>Category</h4>
+                <select value={item.category}
                   name="category"
-                  required
                   onChange={handleChange}
-                />
+                  className="input-category">
+                  <option value="Category">Choose a Category</option>
+                  <option className ="drop-down" value="Sports">Sports </option>
+                  <option className ="drop-down"value="Outdoor">Outdoor </option>
+                  <option value="Holiday">Holiday </option>
+                  <option value="Furniture">Furniture </option>
+                  <option value="Services">Services </option>
+                  <option value="Tools">Tools</option>
+        </select>
               </div>
               <div className="break"></div>
               <div>
