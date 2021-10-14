@@ -21,6 +21,7 @@ export default function Image(props) {
 
     const file = await res.json()
     const { name } = e.target
+    setImage(file.secure_url)
     setItem({
       ...item,
       [name]: file?.secure_url,
