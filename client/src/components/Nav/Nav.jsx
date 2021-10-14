@@ -3,6 +3,9 @@ import "./Nav.css";
 
 const authenticatedOptions = (
   <>
+    <NavLink className="link" to="/items">
+      Items
+    </NavLink>
     <NavLink className="link" to="/new">
       Add Item
     </NavLink>
@@ -14,6 +17,9 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <>
+    <NavLink className="link" to="/items">
+      Items
+      </NavLink>
     <NavLink className="link" to="/signup">
       Sign Up
     </NavLink>
@@ -35,7 +41,7 @@ export default function Nav(props) {
   return (
     <nav className="nav">
       <div className="logo">
-        <NavLink className="logo-link" to="/items">
+        <NavLink className="logo-link" to="/">
           The Docks
         </NavLink>
       </div>
