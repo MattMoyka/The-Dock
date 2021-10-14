@@ -63,3 +63,16 @@ label {
 #signup-title {
   font-size: 25px;
 }
+
+
+@media only screen and (max-width: 500px) {
+  .form-div{
+    margin-top: 78px;
+  }
+
+  .submit-button-sign-up {
+    font-size: 15px;
+  }
+
+
+}

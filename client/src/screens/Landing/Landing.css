@@ -6,19 +6,19 @@
   background-color: #EDEDEDF0;
   height: 90vh;
   display: flex;
-  justify-content: space-around;
-  margin-top: 5%;
+  justify-content: center;
+  margin-top: 78px;
 }
 
 .left-landing {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   height: 75vh;
   width: 75vw;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-right: 10px;
 }
 
 .call {
@@ -60,11 +60,11 @@
 }
 
 .landing-img {
-  display: flex;
+
   height: 75vh;
   width: 75vw;
-  margin-top: 5%;
-  margin-right: 3%;
+  margin-top: 78px;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -73,11 +73,24 @@
     display: none;
   }
 
-  .landing {
+  .text-call{
+    font-size: 20px;
+    
+  }
+
+  .call{
+width: 70vw;
+  }
+
+  .left-landing{
+    margin-left: 0;
+  }
+
+  /* .landing {
     margin-top: -10%;
   }
 
   .left-landing {
     margin-top: -10%;
-  }
+  } */
 }
