@@ -55,6 +55,7 @@ label {
   box-shadow: 0px 0px 3px black;
   margin-top: 20px;
   font-size: 20px;
+  font-family: "Sora", sans-serif;
 }
 .submit-button-sign-up:hover {
   /* border-style: solid; */
