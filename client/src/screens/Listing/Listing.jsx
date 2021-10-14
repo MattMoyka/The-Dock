@@ -19,6 +19,7 @@ export default function Listing(props) {
 
   return (
     <Layout user={props.user}>
+      <div className="listing-title">
       <h1 className='page-title'>Select An Item</h1>
       <div className="listings">
         {items.map(item => {
@@ -38,6 +39,7 @@ export default function Listing(props) {
           )
         })}
       </div>
+        </div>
     </Layout>
   )
 }

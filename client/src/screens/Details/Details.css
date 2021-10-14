@@ -1,10 +1,11 @@
 .detailsparent-div {
   display: flex;
   flex-direction: row;
-  /* height: 100vh; */
+  height: 100vh;
   padding: 5%;
   background-color: #edededf0;
   text-align: start;
+  margin-top: 78px;
 }
 .h1-details {
   font-size: 26px;
@@ -48,6 +49,7 @@
   margin: 70px;
   margin-top: 0px;
   align-items: flex-start;
+  
 }
 .top-detail {
   display: flex;

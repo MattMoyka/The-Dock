@@ -74,14 +74,13 @@
   border-radius: 10px;
   height: 48px;
   width: 25vw;
-
+  font-size: 20px;
   box-shadow: 0px 0px 5px black;
   margin: 10px;
 }
 .submit-button-edit:hover,
 .delete-button-edit:hover {
   border-style: solid;
-  font-size: 20px;
 }
 
 .delete-button-edit {

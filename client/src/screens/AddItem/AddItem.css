@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   margin-top: 5%;
+  background-color: #EDEDEDF0;
+  /* height: 100vh; */
+}
+
+body {
+  background-color: #EDEDEDF0;
 }
 
 .create-form {
@@ -73,13 +79,12 @@
   border-radius: 10px;
   height: 48px;
   width: 25vw;
-
+  font-size: 20px;
   box-shadow: 0px 0px 5px black;
   margin-top: 10px;
 }
 .submit-button:hover {
   border-style: solid;
-  font-size: 20px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -66,7 +66,7 @@ export default function SignUp(props) {
     <Layout>
       <div className="form-div">
         <form className="form-sign-up" onSubmit={onSignUp}>
-          <h3>Create Account</h3>
+          <h3 id="signup-title">Create Account</h3>
 
           <div className="inputs">
             <label>Username</label>
@@ -81,7 +81,7 @@ export default function SignUp(props) {
             />
           </div>
           <div className="inputs">
-            <label>Email address</label>
+            <label>Email Address</label>
             <input
               required
               className="input"
