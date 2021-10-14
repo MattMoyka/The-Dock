@@ -8,6 +8,8 @@
   display: flex;
   justify-content: center;
   margin-top: 78px;
+  margin-bottom: 150px;
+  border-bottom: thin;
 }
 
 .left-landing {
@@ -103,4 +105,19 @@ width: 70vw;
   .left-landing {
     margin-top: -10%;
   } */
+}
+.carosel-title {
+  margin-top: 80px;
+}
+
+.Rendered {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.Rendered img {
+  height: 200px;
+  width: 200px;
+  margin: 80px;
 }

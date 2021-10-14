@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./Landing.css";
+import RandomPhotos from "../../components/Generator/RandomPhotos";
 
 export default function Landing(props) {
   return (
@@ -30,6 +31,14 @@ export default function Landing(props) {
             />
           </div>
         </div>
+          <div className="carosel-section">
+              <div className="carosel-title">
+                <h1>View Our Products</h1>
+              </div>
+              <div className="moving-images">
+                 <RandomPhotos />
+              </div>
+            </div>
       </Layout>
     </div>
   );
