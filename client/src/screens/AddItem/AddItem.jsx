@@ -3,6 +3,7 @@ import { createItem } from "../../Services/items";
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import "./AddItem.css";
+import Image from '../../components/Image/Image'
 
 export default function AddItem(props) {
   const [item, setItem] = useState({
@@ -85,15 +86,15 @@ export default function AddItem(props) {
               </div>
             </div>
             <div className="secondLine">
-              <h4>Image URL</h4>
-              <input
+              {/* <input
                 className="input-imgURL"
                 placeholder="Image URL"
                 value={item.imgURL}
                 name="imgURL"
                 required
                 onChange={handleChange}
-              />
+              /> */}
+              <Image item={item} setItem={setItem} />
             </div>
             <div className="thirdLine">
               <h4>Description</h4>
