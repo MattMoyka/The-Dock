@@ -87,6 +87,12 @@ body {
   color: white;
 }
 
+.drop-down{
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 0px 5px black;
+}
+
 @media only screen and (max-width: 600px) {
   .addItem {
     margin-top: 25%;
