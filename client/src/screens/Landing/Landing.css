@@ -22,29 +22,39 @@
 }
 
 .call {
-  /* position: absolute; */
-  /* bottom: 50px; */
-  background-color: #dea01e;
-  height: 48px;
-  width: 400px;
-  border-radius: 10px;
-  margin: 10%;
-  display: flex;
-  justify-content: center;
+  position: inherit;
+  bottom: 50px;
+  /* border-radius: 2px; */
   align-items: center;
   color: black;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 3px black;
+   background-color: #dea01e;
+   margin: 10%;
+   display: flex;
+   justify-content: center;
+   height: 48px;
+   width: 400px;
+   margin-top: 30px;
+   padding: 20px;
+   background-color: #dea01e;
+   border-style: none;
+   font-family: "Sora", sans-serif;
+   color: white;
+   font-weight: lighter;
 }
 
 .call:hover {
-  border-style: solid;
   font-size: 20px;
 }
 
+
+.text-call:hover {
+  color: white;
+}
 .text-call {
   text-decoration: none;
   color: black;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .glass {
@@ -53,7 +63,8 @@
   /* left: 5vw; */
   /* background-color: rgba(125, 125, 125, 0.606); */
   /* padding: 10px; */
-  border-radius: 10px;
+  margin-top: 80px;
+  /* border-radius: 10px; */
   /* color: white; */
   font-size: 40px;
   font-weight: bold;
