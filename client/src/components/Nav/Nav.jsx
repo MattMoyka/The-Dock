@@ -37,7 +37,6 @@ const unauthenticatedOptions = (
 
 export default function Nav(props) {
   const { user } = props;
-  console.log(user);
   return (
     <nav className="nav">
       <div className="logo">
