@@ -3,7 +3,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="footer-container">
-      <p>Meet The Docs crew:</p>
+      <p>Meet The Docks crew:</p>
       <div className="fab fa-linkedin">
         <a
           className="footer-link"

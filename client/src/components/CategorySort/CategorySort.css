@@ -1,0 +1,12 @@
+.category-listing {
+  margin-top: 5%;
+  background-color: #82a9dd;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ind-category {
+  border-style: none;
+  background-color: #82a9dd;
+  font-size: 18px;
+}
