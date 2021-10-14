@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  
 }
 
 .search-input {
@@ -14,6 +14,7 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin: 40px;
+  
 }
 
 .search-input::placeholder {
@@ -29,4 +30,5 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin: 40px;
+
 }

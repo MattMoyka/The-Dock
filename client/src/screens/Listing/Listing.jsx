@@ -66,7 +66,7 @@ export default function Listing(props) {
       <Search  onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="listing-title">
-      <h1 className='page-title'>Select An Item</h1>
+      <h1 className='page-title'>Rent An Item</h1>
       <div className="listings">
         {searchResult.map(item => {
           return (

@@ -3,6 +3,7 @@
   width: 83.5vw;
   justify-content: flex-end;
   margin: 20px;
+ 
 }
 
 .sort-label {
@@ -10,12 +11,15 @@
   /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: bold;
   padding-right: 10px;
+ 
+ 
 }
 
-select {
+.sort-select {
   cursor:pointer;
   border: none;
   font-size: 18px;
+ 
 }
 
 @media (max-width: 500px) {
@@ -23,5 +27,9 @@ select {
       width: 100%;
       justify-content: center;
       margin: 0px;
+  }
+  .sort-select {
+    font-size: 15px;
+   
   }
 }
