@@ -62,7 +62,7 @@ export default function Signin(props) {
     <Layout>
       <div className="form-div">
         <form className="form-sign-in" onSubmit={onSignIn}>
-          <h3>Sign In</h3>
+          <h3 id="signin-title">Login to Your Account</h3>
           <div className="inputs">
             <label>Email</label>
             <input
