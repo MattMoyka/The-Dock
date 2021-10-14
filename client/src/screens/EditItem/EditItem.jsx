@@ -3,6 +3,7 @@ import { getItem, updateItem, deleteItem } from "../../Services/items";
 import { useParams, Redirect, Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./EditItem.css";
+import Image from '../../components/Image/Image'
 
 export default function EditItem(props) {
   const [item, setItem] = useState({
@@ -94,7 +95,7 @@ export default function EditItem(props) {
               </div>
             </div>
             <div className="secondLine-edit">
-              <h4>Image URL</h4>
+              {/* <h4>Image URL</h4>
               <input
                 className="input-imgURL-edit"
                 placeholder="Image URL"
@@ -102,7 +103,8 @@ export default function EditItem(props) {
                 name="imgURL"
                 required
                 onChange={handleChange}
-              />
+              /> */}
+              <Image item={item} setItem={setItem} prevImg={item.imgURL} />
             </div>
             <div className="thirdLine-edit">
               <h4>Description</h4>

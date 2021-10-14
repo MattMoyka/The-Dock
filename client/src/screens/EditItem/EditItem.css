@@ -92,6 +92,7 @@
   background-color: red;
 }
 
+
 @media only screen and (max-width: 600px) {
   .editItem {
     margin-top: 25%;
