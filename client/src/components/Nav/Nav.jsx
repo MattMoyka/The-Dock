@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import SignOut from "../../screens/SignOut/SignOut";
 import "./Nav.css";
 
 const authenticatedOptions = (
