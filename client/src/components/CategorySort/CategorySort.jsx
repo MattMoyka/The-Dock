@@ -4,18 +4,15 @@ import "./CategorySort.css";
 // the on click will do a handle event function that will do the sort, so maybe need 7 different handdle events??
 // if !category == Sports, remove card?
 
-// if (!category == Sports) {
-// }
-
 export default function CategorySort(props) {
   return (
     <div className="category-listing">
       <button onClick={() => console.log("All")} className="ind-category">
         All
       </button>
-      {/* <button onClick={() => console.log("Sports")} className="ind-category"> */}
       <button
-        onClick={() => props.handleCategorySort("Sports")}
+        onClick={() => console.log("Sports")}
+        // onClick={() => props.handleCategorySort()}
         className="ind-category"
       >
         Sports

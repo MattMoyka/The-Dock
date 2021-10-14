@@ -6,13 +6,15 @@ import Sort from "../../components/Sort/Sort";
 import { Link } from "react-router-dom";
 import "./Listing.css";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
-// import CategorySort from "../../components/CategorySort/CategorySort";
+//
+import CategorySort from "../../components/CategorySort/CategorySort";
 
 export default function Listing(props) {
   const [items, setItems] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
   const [applySort, setApplySort] = useState(false);
   const [sortType, setSortType] = useState("name-ascending");
+  //
   // const [applyCategorySort, setApplyCategorySort] = useState(false);
 
   useEffect(() => {
@@ -60,6 +62,7 @@ export default function Listing(props) {
   };
   const handleSubmit = (event) => event.preventDefault();
 
+  //
   // const handleCategorySort = () => {
   //   const results = items.filter((item) => item.category === "Sports");
   //   setApplyCategorySort(results);
@@ -68,7 +71,9 @@ export default function Listing(props) {
 
   return (
     <Layout user={props.user}>
-      {/* <CategorySort handleCategorySort={handleCategorySort} /> */}
+      <CategorySort
+      // handleCategorySort={handleCategorySort}
+      />
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="listing-title">
