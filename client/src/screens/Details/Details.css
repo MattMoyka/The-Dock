@@ -5,7 +5,7 @@
   padding: 5%;
   background-color: #edededf0;
   text-align: start;
-  margin-top: 78px;
+  margin-top: 90px;
 }
 .h1-details {
   font-size: 26px;
@@ -66,6 +66,12 @@
   font-family: "Sora", sans-serif;
   font-weight: bold;
   letter-spacing: 0.1cm;
+  margin-bottom: 30px;
+}
+
+#location-detail{
+  letter-spacing: 0.05cm;
+
 }
 
 .rent-button {
@@ -92,14 +98,21 @@
   margin-top: 30px;
   padding: 20px;
 }
+/* @media only screen and (max-width: 630px){
+  .detailsparent-div{
+margin-bottom: 50px;
+
+  }
+} */
+
 
 @media only screen and (max-width: 600px) {
   .details-image {
     width: 70vw;
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: center;
-    /* margin: 20px; */
+    margin: 10%;
   }
   .detailsparent-div {
     display: flex;
@@ -136,6 +149,7 @@
     width: 70vw;
     padding: 25px;
     letter-spacing: 0.15em;
+   
 
   }
   .far.fa-edit.fa-2x{
