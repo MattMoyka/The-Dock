@@ -75,7 +75,7 @@ body {
 .submit-button {
   background-color: #dea01e;
   border-style: none;
-  border-radius: 10px;
+  font-family: "Sora", sans-serif;
   height: 48px;
   width: 25vw;
   font-size: 20px;
@@ -83,7 +83,8 @@ body {
   margin-top: 10px;
 }
 .submit-button:hover {
-  border-style: solid;
+  /* border-style: solid; */
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {

@@ -52,6 +52,7 @@ label {
   width: 20vw;
   box-shadow: 0px 0px 3px black;
   margin-top: 20px;
+  font-family: "Sora", sans-serif;
   font-size: 20px;
 }
 .submit-button-sign-in:hover {
