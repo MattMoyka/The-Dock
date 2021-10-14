@@ -83,13 +83,25 @@ text-decoration: none;
   .listings {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    width: 100%;
   }
   .itemCards {
       width: 40vw;
+      height: 30vh;
   }
   .itemCards .listing-img {
     width: 40vw;
      }
+    .page-title{
+      margin-top: 95px;
+    }
+
+    .title-text {
+      font-size: medium;
+    }
+    .desc-font {
+      font-size: small;
+    }
 }
 
 
