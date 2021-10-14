@@ -121,8 +121,7 @@ export default function EditItem(props) {
               </button>
               <Link to="/items">
                 <button
-                  className="submit-button-edit"
-                  className="delete-button-edit"
+                  className={("submit-button-edit", "delete-button-edit")}
                   onClick={() => deleteItem(item?._id)}
                 >
                   Delete Item

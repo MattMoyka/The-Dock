@@ -2,12 +2,11 @@
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  background-color: #EDEDEDF0;
-  /* height: 100vh; */
+  background-color: #edededf0;
 }
 
 body {
-  background-color: #EDEDEDF0;
+  background-color: #edededf0;
 }
 
 .create-form {
@@ -88,6 +87,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .addItem {
+    margin-top: 25%;
+  }
+
   .top-line {
     flex-wrap: wrap;
   }
