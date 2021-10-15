@@ -1,42 +1,73 @@
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-
-const authenticatedOptions = (
-  <>
-    <NavLink className="link" to="/items">
-      Items
-    </NavLink>
-    <NavLink className="link" to="/new">
-      Add Item
-    </NavLink>
-    <NavLink className="link" to="/signout">
-      Sign Out
-    </NavLink>
-  </>
-);
-
-const unauthenticatedOptions = (
-  <>
-    <NavLink className="link" to="/items">
-      Items
-      </NavLink>
-    <NavLink className="link" to="/signup">
-      Sign Up
-    </NavLink>
-    <NavLink className="link" to="/signin">
-      Log In
-    </NavLink>
-  </>
-);
-
-// const alwaysOptions = (
-//   <>
-//     <NavLink className="link" to="/items">Items</NavLink>
-//   </>
-// )
+import { useState } from 'react'
 
 export default function Nav(props) {
   const { user } = props;
+  const [ham, setHam] = useState(false)
+
+  const toggleHamburger = () => {
+    setHam(!ham)
+  }
+
+  const authenticatedOptions = (
+    <>
+      <NavLink className="link-items" to="/items">
+        Items
+      </NavLink>
+      <nav className={ham ? 'showMenu' : 'menu'}>
+        <NavLink className="link menuItem" to="/new">
+          Add Item
+        </NavLink>
+        <NavLink className="link menuItem" to="/signout">
+          Sign Out
+        </NavLink>
+      </nav>
+      <button class="hamburger" onClick={toggleHamburger}>
+        <i className={ham ? 'fas fa-skull-crossbones' : 'fas fa-bars'}></i>
+      </button>
+    </>
+  );
+
+  const unauthenticatedOptions = (
+    <>
+      <NavLink className="link-items" to="/items">
+        Items
+      </NavLink>
+      <nav className={ham ? 'showMenu' : 'menu'}>
+        <NavLink className="link menuItem" to="/signup">
+          Sign Up
+        </NavLink>
+        <div className='line'></div>
+        <NavLink className="link menuItem" to="/signin">
+          Log In
+        </NavLink>
+      </nav>
+      <button class="hamburger" onClick={toggleHamburger}>
+        <i className={ham ? 'fas fa-skull-crossbones' : 'fas fa-bars'}></i>
+      </button>
+    </>
+  );
+
+
+
+
+
+  // const alwaysOptions = (
+  //   <>
+  //     <NavLink className="link" to="/items">Items</NavLink>
+  //   </>
+  // )
+
+
+
+
+
+
+
+
+
+
   return (
     <nav className="nav">
       <div className="logo">
