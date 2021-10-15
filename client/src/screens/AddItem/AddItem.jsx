@@ -25,8 +25,14 @@ export default function AddItem(props) {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (item.imgURL !== "")
+    {
     const created = await createItem(item);
     setCreated({ created });
+    } else {
+      alert("Please upload picture")
+     }
+    
   };
   if (isCreated) {
     return <Redirect to={`/items`} />;
