@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getItems } from '../../Services/items'
+import { Link } from 'react-router-dom'
 
 export default function RandomPhotos() {
     const [items, setItems] = useState([])
@@ -34,7 +35,7 @@ export default function RandomPhotos() {
       
       };
       useEffect(()=> {  
-          setTimeout(RandomNumber, 5000)
+          setTimeout(RandomNumber, 6000)
       }, [four]);
 
       console.log(one)
@@ -43,14 +44,20 @@ export default function RandomPhotos() {
     return (
         <>
             <div className="Rendered"> 
-                <div>
-                    <img src={items[one]?.imgURL} />
+                <div className="block">
+                    <Link to={`/items/${items[one]?._id}`}>
+                    <img src={items[one]?.imgURL} id="aniPic" />
+                    </Link>
                 </div>
-                <div>
-                    <img src={items[two]?.imgURL} />
+                <div className="block">
+                    <Link to={`/items/${items[two]?._id}`}>
+                    <img src={items[two]?.imgURL} id="aniPic" />
+                    </Link>
                 </div>
-                <div>
-                    <img src={items[three]?.imgURL} />
+                <div className="block">
+                    <Link to={`/items/${items[three]?._id}`}>
+                    <img src={items[three]?.imgURL} id="aniPic" />
+                    </Link>
                 </div>
             </div>
         </>
