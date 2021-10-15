@@ -5,9 +5,12 @@
 .landing {
   background-color: #EDEDEDF0;
   height: 90vh;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   margin-top: 78px;
+  border-bottom: solid 1px;
+  margin-bottom: 10px;
 }
 
 .left-landing {
@@ -70,11 +73,10 @@
 }
 
 .landing-img {
-
+  margin-bottom: 5px;
   height: 75vh;
   width: 75vw;
   margin-top: 78px;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -103,4 +105,24 @@ width: 70vw;
   .left-landing {
     margin-top: -10%;
   } */
+}
+.carosel-title {
+  margin-top: 80px;
+}
+
+.Rendered {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 5px;
+}
+
+.Rendered img {
+  height: 200px;
+  width: 200px;
+  margin: 80px;
+}
+
+.carosel-section {
+  margin-top: 80px;
 }
