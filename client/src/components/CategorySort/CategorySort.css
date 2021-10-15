@@ -1,8 +1,11 @@
 .category-listing {
-  margin-top: 5%;
+  margin-top: 78px;
   background-color: #82a9dd;
   display: flex;
   justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 .ind-category {
