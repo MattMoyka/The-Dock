@@ -80,6 +80,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Rendered {
+    display: flex;
+    flex-direction: column;
+  }
   .landing-img {
     /* visibility: hidden; */
     display: none;
@@ -125,4 +129,20 @@ width: 70vw;
 
 .carosel-section {
   margin-top: 80px;
+}
+
+#aniPic {
+  animation-name: aniPic;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes aniPic{
+  0% { transform: scale(1);}
+  25%{ transform: scale(1.2);}
+  50%{ transform: scale(1.2);}
+  75%{ transform: scale(1.2);}
+  100%{ transform: scale(1);}
 }
