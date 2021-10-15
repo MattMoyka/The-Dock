@@ -14,8 +14,6 @@ export default function Listing(props) {
   const [searchResult, setSearchResult] = useState([]);
   const [applySort, setApplySort] = useState(false);
   const [sortType, setSortType] = useState("name-ascending");
-  //
-  // const [applyCategorySort, setApplyCategorySort] = useState(false);
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -62,17 +60,23 @@ export default function Listing(props) {
   };
   const handleSubmit = (event) => event.preventDefault();
 
-  //
-  // const handleCategorySort = () => {
-  //   const results = items.filter((item) => item.category === "Sports");
-  //   setApplyCategorySort(results);
-  //   setApplyCategorySort(true);
-  // };
+  const handleSearchCat = (e) => {
+    const results = items.filter((item) => item.category === e);
+    setSearchResult(results);
+    setApplySort(true);
+  };
+
+  const handleSearchCatAll = () => {
+    const results = items.filter((item) => item.category);
+    setSearchResult(results);
+    setApplySort(true);
+  };
 
   return (
     <Layout user={props.user}>
       <CategorySort
-      // handleCategorySort={handleCategorySort}
+        handleSearchCatAll={handleSearchCatAll}
+        handleSearchCat={handleSearchCat}
       />
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
