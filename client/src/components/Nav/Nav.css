@@ -24,6 +24,7 @@ align-content: center;
   list-style: none;
   padding: 15px;
   padding-top: 80px;
+  z-index: 5;
 }
 .showMenu {
   display: flex;
@@ -40,7 +41,7 @@ align-content: center;
   list-style: none;
   padding: 15px;
   padding-top: 80px;
-  z-index: 5;
+  z-index:auto;
   box-shadow: 0 0 5px black;
 }
 
@@ -54,7 +55,7 @@ align-content: center;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
 .nav-links {
@@ -71,8 +72,11 @@ align-content: center;
   text-decoration: none;
   padding-left: 20px;
   margin-bottom: 10px;
+  margin-top: 10px;
  
 }
+
+
 
 .line{
   border-top: 3px solid black;
@@ -86,17 +90,27 @@ align-content: center;
   margin-right: 50px;
 }
 
+.link-items:hover{
+  text-decoration: underline;
+}
+.link:hover{
+  text-decoration: underline;
+}
+
 .logo {
   margin-left: 4%;
 }
 
 .logo-link {
   text-decoration: none;
-  color: black;
-  font: bold;
+  color: white;
+  font-weight: 900;
   font-size: xx-large;
   z-index: 1001;
+  font-family: 'Roboto Slab', serif;
+
 }
+
 
 @media only screen and (max-width: 850px) {
   /* For mobile phones: */

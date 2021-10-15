@@ -72,6 +72,7 @@ export default function Nav(props) {
     <nav className="nav">
       <div className="logo">
         <NavLink className="logo-link" to="/">
+          <img src='https://i.imgur.com/PJVwcJg.png' height='30px' />
           The Docks
         </NavLink>
       </div>
