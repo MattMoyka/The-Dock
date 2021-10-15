@@ -36,7 +36,7 @@ export default function Image(props) {
     <div className='image-upload'>
       <h4>Upload Image</h4>
       <input className='input-image' type='file' name='file' placeholder="Upload an image"
-        onChange={uploadImage} value={item.imgUrl} name="imgURL" required />
+        onChange={uploadImage} value={item.imgUrl} name="imgURL"  />
       <div className='image-section'>
         {loading ? <h3>Loading.......</h3> : null}
         {prevImg === undefined ? <img className='image-act' src={image}   /> : <img className='image-act' src={prevImg} />}
