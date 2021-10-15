@@ -26,10 +26,18 @@ export default function RandomPhotos() {
           // create interval
         //   const interval = setInterval(
             // set number every 5s
-                setOne(Math.floor(Math.random() * items.length/3));
-                setTwo(Math.floor(Math.random() * (items.length * 2 / 3 - items.length / 3) + (items.length / 3)));
-                setThree(Math.floor(Math.random() * (items.length - items.length * 2 / 3) + (items.length * 2 / 3)))
-                setFour(Math.random())
+                let varOne = (Math.floor(Math.random() * items.length/3));
+                let varTwo = (Math.floor(Math.random() * (items.length * 2 / 3 - items.length / 3) + (items.length / 3)));
+                let varThree = (Math.floor(Math.random() * (items.length - items.length * 2 / 3) + (items.length * 2 / 3)));
+                let varFour = (Math.random() * 2 / 2)
+
+
+                setOne(varOne !== one ? varOne : varOne + 1);
+                setTwo(varTwo !== two ? varTwo : varTwo + 1);
+                setThree(varThree !== three ? varThree : varThree - 1);
+                setFour(varFour);
+
+
           // clean up interval on unmount
         // }, []);
       
