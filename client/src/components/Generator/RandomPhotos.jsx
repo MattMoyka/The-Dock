@@ -6,6 +6,7 @@ export default function RandomPhotos() {
     const [one, setOne] = useState("");
     const [two, setTwo] = useState("");
     const [three, setThree] = useState("");
+    const [four, setFour] = useState("")
 
     useEffect(() => {
         const fetchItems = async () => {
@@ -16,28 +17,28 @@ export default function RandomPhotos() {
       }, [])
 
       console.log(one)
-      
+
     const RandomNumber = () => {
         
         // add side effect to component
-        useEffect(() => {
+        // useEffect(() => {
           // create interval
-          const interval = setInterval(
+        //   const interval = setInterval(
             // set number every 5s
-            () => {setOne(Math.floor(Math.random() * items.length/3));
+                setOne(Math.floor(Math.random() * items.length/3));
                 setTwo(Math.floor(Math.random() * (items.length * 2 / 3 - items.length / 3) + (items.length / 3)));
-                setThree(Math.floor(Math.random() * (items.length - items.length * 2 / 3) + (items.length * 2 / 3)))},
-            2000
-          );
-      
+                setThree(Math.floor(Math.random() * (items.length - items.length * 2 / 3) + (items.length * 2 / 3)))
+                setFour(Math.random())
           // clean up interval on unmount
-          return () => {
-            clearInterval(interval);
-          };
-        }, []);
+        // }, []);
       
       };
-      RandomNumber()
+      useEffect(()=> {  
+          setTimeout(RandomNumber, 5000)
+      }, [four]);
+
+      console.log(one)
+      console.log(two)
 
     return (
         <>
