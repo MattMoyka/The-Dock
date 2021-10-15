@@ -7,6 +7,7 @@ export default function Landing(props) {
   return (
     <div className="main-container">
       <Layout user={props.user}>
+        <div className="placeholding">
         <div className="landing">
           <div className="left-landing">
             <p className="glass">
@@ -31,9 +32,17 @@ export default function Landing(props) {
             />
           </div>
         </div>
+            <div className="view-prods">
+              <div className="view-title">
+                <div>
+                <h1 id="ani-title" className="fas fa-arrow-down">View Our Products <h4 className="fas fa-arrow-down"></h4></h1>
+                </div>
+                </div>
+              </div>
+        </div>
           <div className="carosel-section">
               <div className="carosel-title">
-                <h1>View Our Products</h1>
+                <h1>View Products</h1>
               </div>
               <div className="moving-images">
                  <RandomPhotos />
