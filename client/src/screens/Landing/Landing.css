@@ -3,14 +3,21 @@
 }
 
 .landing {
+  display: flex;
   background-color: #EDEDEDF0;
   height: 90vh;
   min-height: 800px;
-  display: flex;
+  flex-wrap: inherit;
   justify-content: center;
   margin-top: 78px;
-  border-bottom: solid 1px;
   margin-bottom: 10px;
+}
+
+.view-prods {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid 1px;
 }
 
 .left-landing {
@@ -79,37 +86,6 @@
   margin-top: 78px;
 }
 
-@media only screen and (max-width: 600px) {
-  .Rendered {
-    display: flex;
-    flex-direction: column;
-  }
-  .landing-img {
-    /* visibility: hidden; */
-    display: none;
-  }
-
-  .text-call{
-    font-size: 20px;
-    
-  }
-
-  .call{
-width: 70vw;
-  }
-
-  .left-landing{
-    margin-left: 0;
-  }
-
-  /* .landing {
-    margin-top: -10%;
-  }
-
-  .left-landing {
-    margin-top: -10%;
-  } */
-}
 .carosel-title {
   margin-top: 80px;
 }
@@ -120,6 +96,7 @@ width: 70vw;
   justify-items: center;
   margin-top: 5px;
 }
+
 
 .Rendered img {
   height: 200px;
@@ -145,4 +122,80 @@ width: 70vw;
   50%{ transform: scale(1.2);}
   75%{ transform: scale(1.2);}
   100%{ transform: scale(1);}
+}
+
+.view-prods {
+  margin-top: 30px;
+  min-height: 150px;
+}
+
+#ani-title {
+  animation-name: aniWord;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes aniWord {
+  0% { transform: translateY(0px)}
+  /* 25%{ transform: translateY(100px)} */
+  50%{ transform: translateY(-220px)}
+  /* 75%{ transform: translateY(1px)} */
+  100%{ transform: translateY(0px)}
+}
+
+.view-title {
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .landing {
+    display: flex;
+    min-height: 200px;
+  }
+  .view-prods {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Rendered {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-img {
+    /* visibility: hidden; */
+    display: none;
+  }
+
+  .text-call{
+    font-size: 20px;
+    
+  }
+
+  .call{
+width: 70vw;
+  }
+
+  .left-landing{
+    margin-left: 0;
+  }
+
+  #ani-title {
+    animation-name: aniWord;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    
+  }
+  
+  @keyframes aniWord {
+    0% { transform: translateY(0px)}
+    /* 25%{ transform: translateY(100px)} */
+    50%{ transform: translateY(-180px)}
+    /* 75%{ transform: translateY(1px)} */
+    100%{ transform: translateY(0px)}
+  }
 }
