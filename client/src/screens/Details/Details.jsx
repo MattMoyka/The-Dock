@@ -35,7 +35,7 @@ export default function Details(props) {
             <div className="the-buttons">
               <button
                 className="rent-button"
-                onClick={() => alert("congrats on the purchase")}
+                onClick={() => alert(`Call: ${item.userId.phone}`)}
               >
                 RENT NOW
               </button>
