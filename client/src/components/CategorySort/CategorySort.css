@@ -1,5 +1,9 @@
 .category-listing {
-  margin-top: 78px;
+  position: fixed;
+  top:78px;
+  left: 0;
+  right: 0;
+
   background-color: #82a9dd;
   display: flex;
   justify-content: space-evenly;
@@ -12,4 +16,11 @@
   border-style: none;
   background-color: #82a9dd;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 850px) {
+  /* For mobile phones: */
+  .category-listing{
+    top: 61px;
+  }
 }
