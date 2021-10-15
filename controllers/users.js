@@ -76,4 +76,95 @@ export const verify = async (req, res) => {
   }
 };
 
-export const changePassword = async (req, res) => { };
+export const changePassword = async (req, res) => {};
+
+export const getUser = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id).populate("items");
+    res.json(user);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getUsers = async (req, res) => {
+  try {
+    const users = await User.find().populate("items");
+    res.json(users);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getUserItems = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const userItems = await Item.find({ userId: user._id });
+    res.json(userItems);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const getUserItem = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const userItem = await Item.findById(req.params.itemId).populate("userId");
+    if (userItem.userId.equals(user._id)) {
+      return res.json(userItem);
+    }
+    throw new Error(`Item ${userItem._id} does not belong to user ${user._id}`);
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const createUserItem = async (req, res) => {
+  try {
+    if (await User.findById(req.body.userId)) {
+      const userItem = new Item(req.body);
+      await userItem.save();
+      res.status(201).json(userItem);
+      //changed the line above to be userProduct instead of product
+    }
+    throw new Error(`User ${req.body.userId} does not exist!`);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const updateUserItem = async (req, res) => {
+  try {
+    if (await User.findById(req.params.id)) {
+      const item = await Item.findByIdAndUpdate(itemId, req.body, {
+        new: true,
+      });
+      res.status(200).json(item);
+    }
+    throw new Error(`User ${req.params.id} does not exist!`);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+export const deleteUserItem = async (req, res) => {
+  try {
+    if (await User.findById(req.params.id)) {
+      const deleted = await Item.findByIdAndDelete(req.params.itemId);
+      if (deleted) {
+        return res.status(200).send("Item deleted");
+      }
+      throw new Error(`Item ${req.params.itemId} not found`);
+    }
+    throw new Error(`User ${req.params.id} does not exist!`);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: error.message });
+  }
+};

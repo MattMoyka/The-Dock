@@ -3,6 +3,7 @@ import { getItem, updateItem, deleteItem } from "../../Services/items";
 import { useParams, Redirect, Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./EditItem.css";
+import Image from '../../components/Image/Image'
 
 export default function EditItem(props) {
   const [item, setItem] = useState({
@@ -39,7 +40,7 @@ export default function EditItem(props) {
   if (isUpdated) {
     return <Redirect to={`/items/${id}`} />;
   }
-
+console.log(item)
   return (
     <div>
       <Layout user={props.user}>
@@ -59,15 +60,19 @@ export default function EditItem(props) {
                 />
               </div>
               <div>
-                <h4>Category</h4>
-                <input
-                  className="input-category-edit"
-                  placeholder="Category"
-                  value={item.category}
+              <h4>Category</h4>
+                <select value={item.category}
                   name="category"
-                  required
                   onChange={handleChange}
-                />
+                  className="input-category">
+                  <option value="Category">Choose a Category</option>
+                  <option className ="drop-down" value="Sports">Sports </option>
+                  <option className ="drop-down"value="Outdoor">Outdoor </option>
+                  <option value="Holiday">Holiday </option>
+                  <option value="Furniture">Furniture </option>
+                  <option value="Services">Services </option>
+                  <option value="Tools">Tools</option>
+        </select>
               </div>
               <div className="break"></div>
               <div>
@@ -94,7 +99,7 @@ export default function EditItem(props) {
               </div>
             </div>
             <div className="secondLine-edit">
-              <h4>Image URL</h4>
+              {/* <h4>Image URL</h4>
               <input
                 className="input-imgURL-edit"
                 placeholder="Image URL"
@@ -102,7 +107,8 @@ export default function EditItem(props) {
                 name="imgURL"
                 required
                 onChange={handleChange}
-              />
+              /> */}
+              <Image item={item} setItem={setItem} prevImg={item.imgURL} />
             </div>
             <div className="thirdLine-edit">
               <h4>Description</h4>
@@ -121,8 +127,7 @@ export default function EditItem(props) {
               </button>
               <Link to="/items">
                 <button
-                  className="submit-button-edit"
-                  className="delete-button-edit"
+                  className={("submit-button-edit", "delete-button-edit")}
                   onClick={() => deleteItem(item?._id)}
                 >
                   Delete Item

@@ -1,0 +1,16 @@
+.footer-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid;
+}
+
+.footer-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

@@ -3,6 +3,7 @@ import { createItem } from "../../Services/items";
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import "./AddItem.css";
+import Image from '../../components/Image/Image'
 
 export default function AddItem(props) {
   const [item, setItem] = useState({
@@ -24,8 +25,14 @@ export default function AddItem(props) {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (item.imgURL !== "")
+    {
     const created = await createItem(item);
     setCreated({ created });
+    } else {
+      alert("Please upload picture")
+     }
+    
   };
   if (isCreated) {
     return <Redirect to={`/items`} />;
@@ -35,7 +42,7 @@ export default function AddItem(props) {
     <div>
       <Layout user={props.user}>
         <div className="addItem">
-          <form className="create-form" onSubmit={handleSubmit}>
+          <form className="create-form" onSubmit={handleSubmit} >
             <div className="top-line">
               <div>
                 <h4>Title</h4>
@@ -50,15 +57,19 @@ export default function AddItem(props) {
                 />
               </div>
               <div>
-                <h4>Category</h4>
-                <input
-                  className="input-category"
-                  placeholder="Category"
-                  value={item.category}
+              <h4>Category</h4>
+                <select value={item.category}
                   name="category"
-                  required
                   onChange={handleChange}
-                />
+                  className="input-category">
+                  <option value="Category">Choose a Category</option>
+                  <option className ="drop-down" value="Sports">Sports </option>
+                  <option className ="drop-down"value="Outdoor">Outdoor </option>
+                  <option value="Holiday">Holiday </option>
+                  <option value="Furniture">Furniture </option>
+                  <option value="Services">Services </option>
+                  <option value="Tools">Tools</option>
+        </select>
               </div>
               <div className="break"></div>
               <div>
@@ -76,7 +87,7 @@ export default function AddItem(props) {
                 <h4>Location</h4>
                 <input
                   className="input-location"
-                  placeholder="Location"
+                  placeholder="Zip Code"
                   value={item.location}
                   name="location"
                   required
@@ -85,15 +96,15 @@ export default function AddItem(props) {
               </div>
             </div>
             <div className="secondLine">
-              <h4>Image URL</h4>
-              <input
+              {/* <input
                 className="input-imgURL"
                 placeholder="Image URL"
                 value={item.imgURL}
                 name="imgURL"
                 required
                 onChange={handleChange}
-              />
+              /> */}
+              <Image item={item} setItem={setItem} />
             </div>
             <div className="thirdLine">
               <h4>Description</h4>

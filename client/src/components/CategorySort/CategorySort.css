@@ -1,0 +1,26 @@
+.category-listing {
+  position: fixed;
+  top:78px;
+  left: 0;
+  right: 0;
+z-index: 1;
+  background-color: #82a9dd;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.ind-category {
+  border-style: none;
+  background-color: #82a9dd;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 850px) {
+  /* For mobile phones: */
+  .category-listing{
+    top: 61px;
+  }
+}

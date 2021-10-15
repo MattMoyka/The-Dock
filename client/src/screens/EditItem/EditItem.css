@@ -67,28 +67,37 @@
   width: 99%;
 }
 
+.buttons-edit {
+  display: block;
+}
+
 .submit-button-edit,
 .delete-button-edit {
+  margin-top: 30px;
+  padding: 25px;
   background-color: #dea01e;
   border-style: none;
-  border-radius: 10px;
-  height: 48px;
-  width: 25vw;
-
-  box-shadow: 0px 0px 5px black;
-  margin: 10px;
+  font-family: "Sora", sans-serif;
+  color: black;
+  font-weight: bold;
+  margin: 25px;
 }
 .submit-button-edit:hover,
 .delete-button-edit:hover {
-  border-style: solid;
-  font-size: 20px;
+  /* border-style: solid; */
+  color: white;
 }
 
 .delete-button-edit {
   background-color: red;
 }
 
+
 @media only screen and (max-width: 600px) {
+  .editItem {
+    margin-top: 25%;
+  }
+
   .top-line-edit {
     flex-wrap: wrap;
   }

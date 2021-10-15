@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   margin-top: 5%;
+  background-color: #edededf0;
+}
+
+body {
+  background-color: #edededf0;
 }
 
 .create-form {
@@ -70,19 +75,29 @@
 .submit-button {
   background-color: #dea01e;
   border-style: none;
-  border-radius: 10px;
+  font-family: "Sora", sans-serif;
   height: 48px;
   width: 25vw;
-
+  font-size: 20px;
   box-shadow: 0px 0px 5px black;
   margin-top: 10px;
 }
 .submit-button:hover {
-  border-style: solid;
-  font-size: 20px;
+  /* border-style: solid; */
+  color: white;
+}
+
+.drop-down{
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 0px 5px black;
 }
 
 @media only screen and (max-width: 600px) {
+  .addItem {
+    margin-top: 25%;
+  }
+
   .top-line {
     flex-wrap: wrap;
   }
