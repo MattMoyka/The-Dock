@@ -72,12 +72,14 @@ export default function Nav(props) {
     <nav className="nav">
       <div className="logo">
         <NavLink className="logo-link" to="/">
-          <img src='https://i.imgur.com/PJVwcJg.png' height='30px' />
-          The Docks
+          <img className='logo-img' src='https://i.imgur.com/PJVwcJg.png' height='30px' />
+          <div>
+            The Docks
+          </div>
         </NavLink>
       </div>
       <div className="nav-links">
-        {user && <div className="link">Welcome, {user.username}!</div>}
+        {user && <div className="link-welcome">Welcome, {user.username}!</div>}
         {/* {alwaysOptions} */}
         {user ? authenticatedOptions : unauthenticatedOptions}
       </div>
