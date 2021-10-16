@@ -38,7 +38,6 @@ export default function Nav(props) {
         <NavLink className="link menuItem" to="/signup">
           Sign Up
         </NavLink>
-        <div className='line'></div>
         <NavLink className="link menuItem" to="/signin">
           Log In
         </NavLink>
