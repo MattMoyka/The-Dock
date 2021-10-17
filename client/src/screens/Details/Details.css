@@ -165,7 +165,7 @@ margin-left: 20px;
   
 @media only screen and (max-width: 700px) {
   .details-image {
-    width: 80vw;
+    width: 70vw;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -181,6 +181,7 @@ margin-left: 20px;
     height: auto;
      /* padding: 10%; */
     align-items: center; 
+    /* width: 100%;  */
     background-color:#d2e0e8;
   }
   .info-div {
@@ -220,5 +221,11 @@ margin-left: 20px;
     border-top: rgba(196, 196, 196, 0.221) solid;
     width:100%;
     border-bottom: rgba(196, 196, 196, 0.221) solid;
+  }
+  .far.fa-comment-dots{
+    margin-left: 20px;
+  }
+  .user-name{
+    font-size:15px;
   }
 }

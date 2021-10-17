@@ -102,7 +102,7 @@ export default function Listing(props) {
                         {" "}
                         {item?.location}
                       </h3>
-                      <h3 className="desc-font"> $ {item?.price}/hr</h3>
+                      <h3 className="desc-font"> $ {item?.price}/day</h3>
                     </div>
                   </div>
                 </Link>

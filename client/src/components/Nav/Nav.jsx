@@ -42,7 +42,7 @@ export default function Nav(props) {
           Log In
         </NavLink>
       </nav>
-      <button class="hamburger" onClick={toggleHamburger}>
+      <button className="hamburger" onClick={toggleHamburger}>
         <i className={ham ? 'fas fa-skull-crossbones' : 'fas fa-bars'}></i>
       </button>
     </>
@@ -71,7 +71,7 @@ export default function Nav(props) {
     <nav className="nav">
       <div className="logo">
         <NavLink className="logo-link" to="/">
-          <img className='logo-img' src='https://i.imgur.com/PJVwcJg.png' height='30px' />
+          <img className='logo-img' src='https://i.imgur.com/PJVwcJg.png' alt="nav-menu" height='30px' />
           <div>
             The Docks
           </div>

@@ -15,7 +15,7 @@ export default function Details(props) {
     };
     fetchItem();
   }, [id]);
-
+console.log(item)
   return (
     <div>
       <Layout user={props.user}>
