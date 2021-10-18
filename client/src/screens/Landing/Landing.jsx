@@ -35,7 +35,7 @@ export default function Landing(props) {
           <div className="view-prods">
             <div className="view-title">
               <div>
-                <h1 id="ani-title" className="fas fa-arrow-down">Products <h4 className="fas fa-arrow-down"></h4></h1>
+                <h1 id="ani-title" className="fas fa-arrow-down">Products <div className="fas fa-arrow-down"></div></h1>
               </div>
             </div>
           </div>

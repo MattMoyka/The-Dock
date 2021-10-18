@@ -9,9 +9,9 @@ const Item = new Schema(
     price: { type: String, required: true },
     location: { type: String, required: true },
     category: { type: String, required: true },
-    userId: { type: Schema.Types.ObjectId, ref: "users" },
+    userId: { type: Schema.Types.ObjectId, ref: 'users' },
   },
-  { timestamps: true }
+  { timestamps: true, toJSON: { virtuals: true } }
 );
 
-export default mongoose.model("items", Item);
+export default mongoose.model('items', Item);

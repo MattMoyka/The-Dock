@@ -15,6 +15,7 @@ export default function RandomPhotos() {
       setItems(allItems)
     }
     fetchItems()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   console.log(one)
@@ -44,6 +45,7 @@ export default function RandomPhotos() {
   };
   useEffect(() => {
     setTimeout(RandomNumber, 6000)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [four]);
 
   console.log(one)
@@ -54,17 +56,17 @@ export default function RandomPhotos() {
       <div className="Rendered">
         <div className="block">
           <Link to={`/items/${items[one]?._id}`}>
-            <img src={items[one]?.imgURL} alt="firstone"id="aniPic" />
+            <img src={items[one]?.imgURL} alt="firstone" id="aniPic" />
           </Link>
         </div>
         <div className="block">
           <Link to={`/items/${items[two]?._id}`}>
-            <img src={items[two]?.imgURL} alt="secondone"id="aniPic" />
+            <img src={items[two]?.imgURL} alt="secondone" id="aniPic" />
           </Link>
         </div>
         <div className="block">
           <Link to={`/items/${items[three]?._id}`}>
-            <img src={items[three]?.imgURL} alt="thirdone"id="aniPic" />
+            <img src={items[three]?.imgURL} alt="thirdone" id="aniPic" />
           </Link>
         </div>
       </div>

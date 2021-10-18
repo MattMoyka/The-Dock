@@ -13,9 +13,9 @@ export default function AddItem(props) {
     imgURL: "",
     description: "",
     location: "",
+    userId: props.user.id
   });
   const [isCreated, setCreated] = useState(false);
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setItem({
@@ -25,19 +25,18 @@ export default function AddItem(props) {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (item.imgURL !== "")
-    {
-      const created = await createItem(item); ;
-    setCreated({ created});
+    if (item.imgURL !== "") {
+      const created = await createItem(item);
+      setCreated({ created });
     } else {
       alert("Please upload picture")
-     }
-    
+    }
+
   };
   if (isCreated) {
     return <Redirect to={`/items`} />;
   }
-// console.log(item)
+  // console.log(item)
   return (
     <div>
       <Layout user={props.user}>
@@ -57,19 +56,19 @@ export default function AddItem(props) {
                 />
               </div>
               <div>
-              <h4>Category</h4>
+                <h4>Category</h4>
                 <select value={item.category}
                   name="category"
                   onChange={handleChange}
                   className="input-category">
                   <option value="Category">Choose a Category</option>
-                  <option className ="drop-down" value="Sports">Sports </option>
-                  <option className ="drop-down"value="Outdoor">Outdoor </option>
+                  <option className="drop-down" value="Sports">Sports </option>
+                  <option className="drop-down" value="Outdoor">Outdoor </option>
                   <option value="Holiday">Holiday </option>
                   <option value="Furniture">Furniture </option>
                   <option value="Services">Services </option>
                   <option value="Tools">Tools</option>
-        </select>
+                </select>
               </div>
               <div className="break"></div>
               <div>
