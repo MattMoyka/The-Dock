@@ -3,7 +3,7 @@ import { createItem } from "../../Services/items";
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import "./AddItem.css";
-import Image from '../../components/Image/Image'
+import Image from "../../components/Image/Image";
 
 export default function AddItem(props) {
   const [item, setItem] = useState({
@@ -25,14 +25,12 @@ export default function AddItem(props) {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (item.imgURL !== "")
-    {
-    const created = await createItem(item);
-    setCreated({ created });
+    if (item.imgURL !== "") {
+      const created = await createItem(item);
+      setCreated({ created });
     } else {
-      alert("Please upload picture")
-     }
-    
+      alert("Please upload picture");
+    }
   };
   if (isCreated) {
     return <Redirect to={`/items`} />;
@@ -42,7 +40,7 @@ export default function AddItem(props) {
     <div>
       <Layout user={props.user}>
         <div className="addItem">
-          <form className="create-form" onSubmit={handleSubmit} >
+          <form className="create-form" onSubmit={handleSubmit}>
             <div className="top-line">
               <div>
                 <h4>Title</h4>
@@ -57,19 +55,25 @@ export default function AddItem(props) {
                 />
               </div>
               <div>
-              <h4>Category</h4>
-                <select value={item.category}
+                <h4>Category</h4>
+                <select
+                  value={item.category}
                   name="category"
                   onChange={handleChange}
-                  className="input-category">
+                  className="input-category"
+                >
                   <option value="Category">Choose a Category</option>
-                  <option className ="drop-down" value="Sports">Sports </option>
-                  <option className ="drop-down"value="Outdoor">Outdoor </option>
+                  <option className="drop-down" value="Sports">
+                    Sports{" "}
+                  </option>
+                  <option className="drop-down" value="Outdoor">
+                    Outdoor{" "}
+                  </option>
                   <option value="Holiday">Holiday </option>
                   <option value="Furniture">Furniture </option>
                   <option value="Services">Services </option>
                   <option value="Tools">Tools</option>
-        </select>
+                </select>
               </div>
               <div className="break"></div>
               <div>

@@ -60,7 +60,7 @@ export default function Signin(props) {
 
   return (
     <Layout>
-      <div className="form-div">
+      <div className="form-div-sign-in">
         <form className="form-sign-in" onSubmit={onSignIn}>
           <h3 id="signin-title">Login to Your Account</h3>
           <div className="inputs">

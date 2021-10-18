@@ -3,7 +3,8 @@
   flex-flow: column nowrap;
   margin: 0 auto;
   background: #edededf0;
-  height: 100vh;
+  justify-content: space-around;
+  /* height: 100vh; */
 }
 
 h3 {
@@ -67,13 +68,11 @@ label {
 }
 
 @media only screen and (max-width: 500px) {
-  .form-div{
+  .form-div {
     margin-top: 78px;
   }
 
   .submit-button-sign-up {
     font-size: 15px;
   }
-
-
 }

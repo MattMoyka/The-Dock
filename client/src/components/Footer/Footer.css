@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid;
+  bottom: 0;
 }
 
 .footer-link {

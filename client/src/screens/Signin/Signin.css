@@ -1,7 +1,11 @@
-.form-div {
+.form-div-sign-in {
   display: flex;
-  flex-flow: column nowrap;
-  margin: 0 auto;
+  /* flex-flow: column nowrap; */
+  /* margin: 0 auto; */
+  justify-content: center;
+  margin-top: 5%;
+
+  /* height: 100vh; */
 }
 
 h3 {
@@ -22,6 +26,7 @@ h3 {
   padding: 20px;
   border-radius: 5px;
   margin-top: 10%;
+  height: auto;
 }
 
 .inputs {
@@ -57,7 +62,7 @@ label {
 }
 .submit-button-sign-in:hover {
   /* border-style: solid; */
-  color: white
+  color: white;
 }
 
 #signin-title {
@@ -65,13 +70,11 @@ label {
 }
 
 @media only screen and (max-width: 500px) {
-  .form-div{
+  .form-div {
     margin-top: 78px;
   }
 
   .submit-button-sign-in {
     font-size: 15px;
   }
-
-
 }
