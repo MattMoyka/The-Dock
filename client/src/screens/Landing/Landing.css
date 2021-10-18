@@ -5,7 +5,7 @@
 .landing {
   display: flex;
   background-color: #EDEDEDF0;
-  height: 80vh;
+  height: 90vh;
   min-height: 550px;
   flex-wrap: inherit;
   justify-content: center;
@@ -54,7 +54,7 @@
 }
 
 .call:hover {
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 

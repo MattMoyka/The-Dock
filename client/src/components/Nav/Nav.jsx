@@ -23,7 +23,7 @@ export default function Nav(props) {
           Sign Out
         </NavLink>
       </nav>
-      <button class="hamburger" onClick={toggleHamburger}>
+      <button className="hamburger" onClick={toggleHamburger}>
         <i className={ham ? 'fas fa-skull-crossbones' : 'fas fa-bars'}></i>
       </button>
     </>

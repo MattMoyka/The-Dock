@@ -22,6 +22,9 @@ function App() {
     fetchUser();
   }, []);
 
+
+
+
   return (
     <div className="App">
       <Route exact path="/">

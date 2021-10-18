@@ -17,11 +17,11 @@ export default function Landing(props) {
               <p>Buy, Sell, Rent, and Trade Anything from Anywhere </p>
               <p>Do you need anything? Because we've got everything!</p>
 
-              <div className="call">
-                <Link to="/items" className="text-call">
-                  Start Your Journey Now
-                </Link>
-              </div>
+              {/* <div className="call"> */}
+              <Link to="/items" className="call text-call">
+                Start Your Journey Now
+              </Link>
+              {/* </div> */}
             </div>
             <div className="landing-img">
               <img
@@ -35,7 +35,7 @@ export default function Landing(props) {
           <div className="view-prods">
             <div className="view-title">
               <div>
-                <h1 id="ani-title" className="fas fa-arrow-down">Products <h4 className="fas fa-arrow-down"></h4></h1>
+                <h1 id="ani-title" className="fas fa-arrow-down">Products <div className="fas fa-arrow-down"></div></h1>
               </div>
             </div>
           </div>

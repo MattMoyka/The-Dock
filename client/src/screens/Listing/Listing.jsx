@@ -72,6 +72,8 @@ export default function Listing(props) {
     setApplySort(true);
   };
 
+
+
   return (
     <Layout user={props.user}>
       <CategorySort
