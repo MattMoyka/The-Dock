@@ -1,6 +1,6 @@
 .category-listing {
   position: fixed;
-  top:78px;
+  top:88px;
   left: 0;
   right: 0;
 z-index: 1;
@@ -21,6 +21,13 @@ z-index: 1;
 @media only screen and (max-width: 850px) {
   /* For mobile phones: */
   .category-listing{
-    top: 61px;
+    top: 76px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /* For mobile phones: */
+  .category-listing{
+    top: 88px;
   }
 }

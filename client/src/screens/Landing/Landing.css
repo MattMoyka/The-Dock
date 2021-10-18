@@ -5,8 +5,8 @@
 .landing {
   display: flex;
   background-color: #EDEDEDF0;
-  height: 90vh;
-  min-height: 800px;
+  height: 80vh;
+  min-height: 550px;
   flex-wrap: inherit;
   justify-content: center;
   margin-top: 78px;
@@ -27,8 +27,9 @@
   /* justify-content: center; */
   height: 75vh;
   width: 75vw;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .call {
@@ -83,7 +84,7 @@
   margin-bottom: 5px;
   height: 75vh;
   width: 75vw;
-  margin-top: 78px;
+  margin-top: 20px;
 }
 
 .carosel-title {
@@ -140,7 +141,7 @@
 @keyframes aniWord {
   0% { transform: translateY(0px)}
   /* 25%{ transform: translateY(100px)} */
-  50%{ transform: translateY(-220px)}
+  50%{ transform: translateY(-100px)}
   /* 75%{ transform: translateY(1px)} */
   100%{ transform: translateY(0px)}
 }
@@ -194,7 +195,7 @@ width: 70vw;
   @keyframes aniWord {
     0% { transform: translateY(0px)}
     /* 25%{ transform: translateY(100px)} */
-    50%{ transform: translateY(-180px)}
+    50%{ transform: translateY(-100px)}
     /* 75%{ transform: translateY(1px)} */
     100%{ transform: translateY(0px)}
   }
