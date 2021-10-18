@@ -17,11 +17,11 @@ export default function Landing(props) {
               <p>Buy, Sell, Rent, and Trade Anything from Anywhere </p>
               <p>Do you need anything? Because we've got everything!</p>
 
-              <div className="call">
-                <Link to="/items" className="text-call">
-                  Start Your Journey Now
-                </Link>
-              </div>
+              {/* <div className="call"> */}
+              <Link to="/items" className="call text-call">
+                Start Your Journey Now
+              </Link>
+              {/* </div> */}
             </div>
             <div className="landing-img">
               <img

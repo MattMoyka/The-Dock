@@ -81,6 +81,7 @@
   font-family: "Sora", sans-serif;
   color: black;
   font-weight: bold;
+  cursor:pointer;
 }
 
 .rent-button:hover {

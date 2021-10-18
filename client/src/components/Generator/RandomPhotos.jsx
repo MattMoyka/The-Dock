@@ -18,7 +18,7 @@ export default function RandomPhotos() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  console.log(one)
+
 
   const RandomNumber = () => {
 
@@ -48,8 +48,7 @@ export default function RandomPhotos() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [four]);
 
-  console.log(one)
-  console.log(two)
+
 
   return (
     <>
