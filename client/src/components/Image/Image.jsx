@@ -39,7 +39,7 @@ export default function Image(props) {
         onChange={uploadImage} value={item.imgUrl} name="imgURL"  />
       <div className='image-section'>
         {loading ? <h3>Loading.......</h3> : null}
-        {prevImg === undefined ? <img className='image-act' src={image}   /> : <img className='image-act' src={prevImg} />}
+        {prevImg === undefined ? <img className='image-act' src={image}   /> : <img className='image-act' src={prevImg} alt="previous" />}
       </div>
     </div>
   )

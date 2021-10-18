@@ -27,8 +27,8 @@ export default function AddItem(props) {
     event.preventDefault();
     if (item.imgURL !== "")
     {
-    const created = await createItem(item);
-    setCreated({ created });
+      const created = await createItem(item); ;
+    setCreated({ created});
     } else {
       alert("Please upload picture")
      }
@@ -37,7 +37,7 @@ export default function AddItem(props) {
   if (isCreated) {
     return <Redirect to={`/items`} />;
   }
-
+// console.log(item)
   return (
     <div>
       <Layout user={props.user}>

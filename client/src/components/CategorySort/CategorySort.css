@@ -21,7 +21,7 @@ z-index: 1;
 @media only screen and (max-width: 850px) {
   /* For mobile phones: */
   .category-listing{
-    top: 76px;
+    top: 84px;
   }
 }
 
