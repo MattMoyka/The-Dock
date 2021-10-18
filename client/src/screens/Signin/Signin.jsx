@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Signin.css";
 import { signIn } from "../../Services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 
 export default function Signin(props) {
@@ -88,6 +88,7 @@ export default function Signin(props) {
             />
           </div>
           {renderError()}
+          <Link to='/signup'>Don't have an account? Create One</Link>
         </form>
       </div>
     </Layout>
