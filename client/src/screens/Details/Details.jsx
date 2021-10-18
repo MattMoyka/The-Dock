@@ -43,7 +43,7 @@ export default function Details(props) {
                   onClick={() => alert(`Call me: ${item.userId?.phone}`)}> </button>
                 <button className="far fa-comment-dots fa-2x"
                   onClick={() => {
-                    window.location.href = `mailto:${item.userId?.email}`; 
+                    window.location.href = `mailto:${item.userId?.email}?subject=${item?.title}&body= Hi, I am interested in the ${item?.title}.`;
                   }}></button>
               </div>
             </div>
