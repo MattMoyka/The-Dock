@@ -1,4 +1,5 @@
 # The-Docks
+# [Click here to view deployed site](https://thedocks.netlify.app/)
 ## Schema
 ```
 //User
@@ -26,7 +27,15 @@ const Item = new Schema(
 ```
 ## Figma Flowchart
 [Figma Link](https://www.figma.com/file/FMWiWoZ9561QD5TWLqitI6/The-Docks?node-id=22%3A117)<br/>
-![wireframe](./readmeImgs/wireframe.png)
+### Landing Page
+![wireframe](./readmeImgs/landing.png)
+### Listing Page
+![wireframe](./readmeImgs/listing.png)
+### Edit Page
+![wireframe](./readmeImgs/edit.png)
+### Create Account Page
+![wireframe](./readmeImgs/createaccount.png)
+### Component Hierarchy
 ![compnent hierarchy](./readmeImgs/compHi.png)
 ![legend](./readmeImgs/legend.png)
 
