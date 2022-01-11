@@ -1,7 +1,8 @@
 
 .hamburger {
-  margin-right: 20px;
-  border: black solid 1px;
+  margin: auto 20px auto 0;
+  border: none;
+  font-size: 30px;
   background: none;
   cursor: pointer;
   z-index: 6;
@@ -76,6 +77,16 @@ align-content: center;
  
 }
 
+.link-welcome {
+  color: black;
+  text-decoration: none;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+ margin-right: 60px;
+ text-transform: capitalize;
+}
+
 
 
 .line{
@@ -86,8 +97,7 @@ align-content: center;
 .link-items {
   color: black;
   text-decoration: none;
-  padding-left: 20px;
-  margin-right: 50px;
+  margin: 10px 30px 10px 0;
 }
 
 .link-items:hover{
@@ -108,6 +118,8 @@ align-content: center;
   font-size: xx-large;
   z-index: 1001;
   font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
 
 }
 
@@ -121,11 +133,18 @@ align-content: center;
     font-size: 18px;
   }
   .logo {
-    margin-left: 1%;
+    margin-left: 0%;
+  }
+
+  .logo-img{
+    height: 48px;
   }
 
   .link {
     margin-right: 8%;
     font-size: 10px;
+  }
+  .link-welcome{
+    margin: auto 0;
   }
 }

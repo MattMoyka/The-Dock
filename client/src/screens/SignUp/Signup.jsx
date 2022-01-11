@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { signUp } from "../../Services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import "./Signup.css";
+
 
 export default function SignUp(props) {
   const history = useHistory();
@@ -40,6 +41,7 @@ export default function SignUp(props) {
         isError: true,
         errorMsg: "Sign Up Details Invalid",
       });
+      alert('Please check username and email. Username has to contain letters and numbers only. Email has to be in the correct format. If you already have an account please sign in.')
     }
   };
 
@@ -117,6 +119,7 @@ export default function SignUp(props) {
             />
           </div>
           {renderError()}
+          <Link to='/signin'>Already have an account? Sign In</Link>
         </form>
       </div>
     </Layout>

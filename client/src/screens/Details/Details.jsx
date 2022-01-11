@@ -15,6 +15,7 @@ export default function Details(props) {
     };
     fetchItem();
   }, [id]);
+  console.log(item)
 
   return (
     <div>
@@ -36,17 +37,20 @@ export default function Details(props) {
               <div className="profile-name">
                 <div className="owner"> Owner
                 </div>
-              <p className="far fa-user fa-2x"> </p>
+                <p className="far fa-user fa-2x"> </p>
                 <p className="user-name">{item?.userId?.username} </p>
-              <button className="fas fa-phone-alt fa-2x"
-            onClick={()=> alert(`Call me: ${item.userId?.phone}`)}> </button>
-              <button className="far fa-comment-dots fa-2x"
-              onClick={() => alert(`Email me: ${item.userId?.email}`)}></button>
-            </div>
+                <button className="fas fa-phone-alt fa-2x"
+                  onClick={() => alert(`Call me: ${item.userId?.phone}`)}> </button>
+                <button className="far fa-comment-dots fa-2x"
+                  onClick={() => {
+                    window.location.href = `mailto:${item.userId?.email}?subject=${item?.title}&body= Hi, I am interested in the ${item?.title}.`;
+                  }}></button>
+              </div>
             </div>
             <div className="the-buttons">
               <button
                 className="rent-button"
+
                 onClick={() => alert(`Thank you for renting with us!`)}>RENT NOW</button>
               <Link
                 className="far fa-edit fa-2x edit-font"
